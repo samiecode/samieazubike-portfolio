@@ -43,11 +43,7 @@ export default function Home() {
 				<div className="flex relative top-[80px] justify-around">
 					<div className="w-[50%]">
 						<label className="font-bold text-[80px] leading-none pt-[40px] tracking-tight">
-							I&apos;m a
-							<span className="text-violet-800">
-								Software
-								<br /> Developer
-							</span>
+							I&apos;m a <span className="text-violet-800">Software<br />Developer</span>
 						</label>
 						<p className="w-[80%] text-[18px] font-medium relative top-[20px]">
 							I have a year of experience building and designing
