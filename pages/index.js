@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+
 export default function Home() {
 	return (
 		<>
@@ -74,9 +75,10 @@ export default function Home() {
 							application using technologies like, Java,
 							Javascript, SpringBoot, MySQL and PostgreSQL.
 						</p>
+						<Contact/>
 					</div>
 					<div className="relative md:max-lg:top-[200px] sm:max-lg:top-[170px] md:max-lg:left-12 sm:max-lg:left-12">
-						<div className="w-[350px] h-[350px] relative rounded before:content-[''] before:absolute  before:w-[340px] before:h-[325px] before:border-4 before:border-[#000] before:-left-[30px] before:top-[50px] before:rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 md:max-lg:w-[500px] md:max-lg:h-[500px] md:max-lg:before:h-[460px] md:max-lg:before:w-[500px] md:max-lg:before:-left-12 md:max-lg:before:top-20">
+						<div className="w-[350px] h-[350px] relative top-[30px] rounded before:content-[''] before:absolute  before:w-[340px] before:h-[325px] before:border-4 before:border-[#000] before:-left-[30px] before:top-[50px] before:rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 md:max-lg:w-[500px] md:max-lg:h-[500px] md:max-lg:before:h-[460px] md:max-lg:before:w-[500px] md:max-lg:before:-left-12 md:max-lg:before:top-20">
 							<Image
 								alt="samie azubike | software developer"
 								src="/MAT_6779.png"
@@ -93,23 +95,38 @@ export default function Home() {
 	);
 }
 
+function Contact() {
+	return (
+		<div className="py-[70px]">
+			<a
+				href="#"
+				className="w-12 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-5 px-9 rounded font-bold">
+				Contect Me
+			</a>
+			<a href="#" className="py-5 px-9 rounded font-bold text-xl text-violet-800">
+				View Portfolio <i class="bx bx-link-external"></i>
+			</a>
+		</div>
+	);
+}
+
 function SocialLink() {
 	return (
-		<div className="absolute rotate-90 right-[-105px] top-[350px]  text-violet-800 text-semibold flex items-center md:max-lg:hidden sm:max-lg:hidden ">
-			<div className="flex items-center">
-				<label className="px-5">Follow me on:</label>
-				<hr className="w-12 border-0 h-px bg-violet-800" />
+		<div className="absolute right-0 flex flex-col top-[270px]  text-violet-800 text-semibold items-center md:max-lg:hidden sm:max-lg:hidden ">
+			<div className="flex rotate-90 items-center">
+				<label className="text-sm">Follow me on:</label>
+				<hr className="w-12 border-0 h-px bg-violet-800 relative left-6" />
 			</div>
 
-			<div className="px-5 flex gap-4">
+			<div className="flex flex-col gap-4 relative top-[100px]">
 				<a href="https://www.twitter.com/samieteq" className="">
-					<i class="bx bxl-twitter bx-rotate-270 text-3xl"></i>
+					<i class="bx bxl-twitter bx-rotate-270 text-3xl transform transition-all hover:scale-150"></i>
 				</a>
 				<a href="https://www.linkedin.com/in/samieteq">
-					<i class="bx bxl-linkedin-square bx-rotate-270 text-3xl"></i>
+					<i class="bx bxl-linkedin-square bx-rotate-270 text-3xl transform transition-all hover:scale-150 hover:rotate-10"></i>
 				</a>
 				<a href="https://www.github.com/samieteq">
-					<i class="bx bxl-github bx-rotate-270 text-3xl"></i>
+					<i class="bx bxl-github text-3xl transform transition-all rotate-270 hover:scale-150"></i>
 				</a>
 			</div>
 		</div>
