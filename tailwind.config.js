@@ -11,8 +11,8 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'hero-pattern': "url('/MAT_6779.png')"
-			}
+				"hero-pattern": "url('/MAT_6779.png')",
+			},
 		},
 	},
 	plugins: [],
