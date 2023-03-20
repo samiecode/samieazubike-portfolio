@@ -21,25 +21,31 @@ export default function Home() {
 					src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
 					async></script> */}
 			</Head>
-			<main className="px-[120px] relative">
+			<main className="lg:px-[120px px-12 relative">
 				<div className="flex items-center justify-between">
 					<a
 						href="#"
 						className="py-7 text-4xl font-bold no-underline relative">
 						Samie Azubike
 					</a>
-					<div className="">
-						<a href="#" className="no-underline px-4 font-bold">
+					<div className="hidden lg:flex">
+						<a
+							href="#"
+							className="no-underline px-4 py-1 font-bold hover:border-b-2">
 							About
 						</a>
-						<a href="#" className="no-underline px-4 font-bold">
+						<a
+							href="#"
+							className="no-underline px-4 py-1 font-bold hover:border-b-2">
 							Skills
 						</a>
-						<a href="#" className="no-underline px-4 font-bold">
+						<a
+							href="#"
+							className="no-underline px-4 py-1 font-bold hover:border-b-2 hover: ">
 							Portfolio
 						</a>
 					</div>
-					<div className="">
+					<div className="lg:flex hidden" >
 						<a
 							href="https://drive.google.com/file/d/1m-Q5CZCYU5Y0E4XAeajOC7UXhTUFpSHy/view?usp=sharing"
 							className="border-2 rounded-[6px] border-violet-800 px-6 py-3 font-bold text-violet-800">
@@ -47,30 +53,32 @@ export default function Home() {
 						</a>
 					</div>
 				</div>
-				<div className="flex relative top-[80px] justify-between">
-					<div className="w-[50%]">
-						<label className="font-bold text-[80px] leading-none pt-[40px] tracking-tight">
+				<div className="flex relative top-[80px] justify-between sm:flex-col lg:flex-row min-[320px]:flex-col">
+					<div className="lg:w-[50%] sm:w-[100%] ">
+						<label className="font-bold lg:text-[80px] leading-none pt-[40px] tracking-tight text-[45px]">
 							I&apos;m a{" "}
 							<span className="text-violet-800">
 								Software
 								<br /> Developer
 							</span>
 						</label>
-						<p className="w-[90%] text-[17px] font-medium relative top-[20px]">
+						<p className="text-[17px] font-medium relative top-[20px] lg:w-[100%] min-[900px]:w-[80%]">
 							I have a year of experience building and designing
 							software, Currently, I love to work on web
 							application using technologies like, Java,
 							Javascript, SpringBoot, MySQL and PostgreSQL.
 						</p>
 					</div>
-					<div className="w-[350px] h-[350px] bg-[#0DB760] relative rounded before:content-[''] before:absolute  before:w-[335px] before:h-[325px] before:border-4 before:border-[#000] before:-left-[30px] before:top-[50px] before:rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500">
-						<Image
-							alt="samie azubike | software developer"
-							src="/MAT_6779.png"
-							className="z-20 absolute bottom-[0]"
-							width={350}
-							height={300}
-						/>
+					<div className=" ">
+						<div className="lg:top-0 top-44 w-[350px] h-[350px] relative rounded before:content-[''] before:absolute  before:w-[335px] before:h-[325px] before:border-4 before:border-[#000] before:-left-[30px] before:top-[50px] before:rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500">
+							<Image
+								alt="samie azubike | software developer"
+								src="/MAT_6779.png"
+								className="z-20 absolute bottom-[0]"
+								width={350}
+								height={300}
+							/>
+						</div>
 					</div>
 				</div>
 				<SocialLink />
