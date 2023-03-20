@@ -21,38 +21,51 @@ export default function Home() {
 				{/* <script
 					src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
 					async></script> */}
+				<script
+					src="https://kit.fontawesome.com/07e60f2f11.js"
+					crossorigin="anonymous"
+					async></script>
 			</Head>
-			<main className="px-[120px] md:max-lg:px-20 sm:max-lg:px-12 relative">
+			<main className="px-[120px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
 				{/* Nav - Header */}
 				<div className="flex relative items-center justify-between after:content['Hello '] after:border-b-2 after:absolute after:border-violet-800 after:left-0 after:top-0 after:bg-violet-800">
 					<a
 						href="#"
-						className="py-7 text-4xl font-bold no-underline relative">
+						className="py-7 text-4xl font-bold no-underline relative xs:max-sm:text-[27px]">
 						Samie Azubike
 					</a>
-					<div className="md:max-lg:hidden sm:max-lg:hidden">
+					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden">
 						<a
 							href="#"
-							className="no-underline px-4 py-1 font-bold hover:border-b-2">
+							className="no-underline px-4 py-1 font-bold hover:text-violet-800">
 							About
 						</a>
 						<a
 							href="#"
-							className="no-underline px-4 py-1 font-bold hover:border-b-2">
+							className="no-underline px-4 py-1 font-bold hover:text-violet-800">
 							Skills
 						</a>
 						<a
 							href="#"
-							className="no-underline px-4 py-1 font-bold hover:border-b-2 hover: ">
+							className="no-underline px-4 py-1 font-bold hover:text-violet-800 ">
 							Portfolio
 						</a>
 					</div>
-					<div className="">
+					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden">
 						<a
 							href="https://drive.google.com/file/d/1m-Q5CZCYU5Y0E4XAeajOC7UXhTUFpSHy/view?usp=sharing"
 							className="border-2 rounded-[6px] border-violet-800 px-6 py-3 font-bold text-violet-800">
 							Resume
 						</a>
+					</div>
+					<div className="absolute right-0 lg:hidden">
+						<Image
+							className="text-slate-900 xs:max-sm:w-[35px]"
+							src="/bars.svg"
+							alt="Menu Bar"
+							height={40}
+							width={40}
+						/>
 					</div>
 				</div>
 				<hr className="w-[100%] border-0 h-px bg-gray-200 absolute left-0 top-22" />
@@ -61,24 +74,37 @@ export default function Home() {
 				<div
 					className="flex relative top-[80px] justify-between   md:max-lg:flex-col 
 				sm:max-lg:flex-col min-[320px]:max-lg:flex-col">
-					<div className="w-[50%] md:max-lg:w-[100%] sm:max-lg:w-[100%] h-auto">
-						<label className="font-bold text-[80px] leading-none pt-[40px] tracking-tight">
+					{/* Description  */}
+					<div className="w-[50%] md:max-lg:w-[100%] sm:max-lg:w-[100%] h-auto relative md:max-lg:top-[600px]  sm:max-lg:top-[500px] xs:max-md:w-[100%] xs:max-md:top-[300px]">
+						<label className="font-bold text-[80px] leading-none pt-[40px] tracking-tight xs:max-md:text-[40px]">
 							I&apos;m a{" "}
 							<span className="text-violet-800">
 								Software
 								<br /> Developer
 							</span>
 						</label>
-						<p className="text-[17px] font-medium relative top-[20px]">
+						<p className="text-[22px] font-medium relative top-[20px] font-medium xs:max-md:text-[20px]">
 							I have a year of experience building and designing
 							software, Currently, I love to work on web
 							application using technologies like, Java,
 							Javascript, SpringBoot, MySQL and PostgreSQL.
 						</p>
-						<Contact/>
+						<Contact />
 					</div>
-					<div className="relative md:max-lg:top-[200px] sm:max-lg:top-[170px] md:max-lg:left-12 sm:max-lg:left-12">
-						<div className="w-[350px] h-[350px] relative top-[30px] rounded before:content-[''] before:absolute  before:w-[340px] before:h-[325px] before:border-4 before:border-[#000] before:-left-[30px] before:top-[50px] before:rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 md:max-lg:w-[500px] md:max-lg:h-[500px] md:max-lg:before:h-[460px] md:max-lg:before:w-[500px] md:max-lg:before:-left-12 md:max-lg:before:top-20">
+
+					{/*=========== Description End =========== */}
+
+					{/* ==== Image ===== */}
+					<div
+						className="relative items-center 
+					md:max-lg:flex md:max-lg:justify-center  md:max-lg:w-[100%]   md:max-lg:absolute md:max-lg:left-12 md:max-lg:top-10 sm:max-lg:absolute
+					sm:max-lg:flex
+					sm:max-lg:justify-center
+					sm:max-lg:w-[100%] sm:max-lg:top-[10px]  sm:max-lg:left-12 xs:max-lg:absolute xs:max-lg:flex xs:max-lg:justify-center xs:max-lg:w-[100%]">
+						<div
+							className="w-[350px] h-[350px] relative top-[30px] rounded before:content-[''] before:absolute  before:w-[340px] before:h-[325px] before:border-4 before:border-[#000] before:-left-[30px] before:top-[50px] before:rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 
+						
+						md:max-lg:w-[400px] md:max-lg:h-[400px] md:max-lg:before:h-[360px] md:max-lg:before:w-[370px] md:max-lg:before:-left-8 md:max-lg:before:top-[70px] xs:max-sm:w-[210px] xs:max-sm:h-[210px] xs:max-sm:before:h-[185px] xs:max-sm:before:w-[200px]  xs:max-sm:before:border-[2px] xs:max-sm:before:top-[40px] xs:max-sm:before:-left-5 xs:max-sm:before:rounded">
 							<Image
 								alt="samie azubike | software developer"
 								src="/MAT_6779.png"
@@ -88,6 +114,7 @@ export default function Home() {
 							/>
 						</div>
 					</div>
+					{/*======= Image End =========== */}
 				</div>
 				<SocialLink />
 			</main>
@@ -100,11 +127,13 @@ function Contact() {
 		<div className="py-[70px]">
 			<a
 				href="#"
-				className="w-12 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-5 px-9 rounded font-bold">
-				Contect Me
+				className="w-12 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-5 px-9 rounded font-bold text-xl xs:max-sm:px-4">
+				Contact Me
 			</a>
-			<a href="#" className="py-5 px-9 rounded font-bold text-xl text-violet-800">
-				View Portfolio <i class="bx bx-link-external"></i>
+			<a
+				href="#"
+				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4">
+				View Portfolio <i class="bx bx-link-external absolute bottom-5 -right-2"></i>
 			</a>
 		</div>
 	);
@@ -112,7 +141,7 @@ function Contact() {
 
 function SocialLink() {
 	return (
-		<div className="absolute right-0 flex flex-col top-[270px]  text-violet-800 text-semibold items-center md:max-lg:hidden sm:max-lg:hidden ">
+		<div className="absolute right-0 flex flex-col top-[270px]  text-violet-800 text-semibold items-center md:max-lg:hidden sm:max-lg:hidden xs:max-lg:hidden">
 			<div className="flex rotate-90 items-center">
 				<label className="text-sm">Follow me on:</label>
 				<hr className="w-12 border-0 h-px bg-violet-800 relative left-6" />
