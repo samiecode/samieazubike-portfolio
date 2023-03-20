@@ -102,13 +102,13 @@ function SocialLink() {
 			</div>
 
 			<div className="px-5 flex gap-4">
-				<a href="#" className="">
+				<a href="https://www.twitter.com/samieteq" className="">
 					<i class="bx bxl-twitter bx-rotate-270 text-3xl"></i>
 				</a>
-				<a href="#">
+				<a href="https://www.linkedin.com/in/samieteq">
 					<i class="bx bxl-linkedin-square bx-rotate-270 text-3xl"></i>
 				</a>
-				<a href="#">
+				<a href="https://www.github.com/samieteq">
 					<i class="bx bxl-github bx-rotate-270 text-3xl"></i>
 				</a>
 			</div>
