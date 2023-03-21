@@ -76,14 +76,14 @@ export default function Home() {
 				sm:max-lg:flex-col min-[320px]:max-lg:flex-col">
 					{/* Description  */}
 					<div className="w-[50%] md:max-lg:w-[100%] sm:max-lg:w-[100%] h-auto relative md:max-lg:top-[600px]  sm:max-lg:top-[500px] xs:max-md:w-[100%] xs:max-md:top-[300px]">
-						<label className="font-bold text-[80px] leading-none pt-[40px] tracking-tight xs:max-md:text-[40px]">
+						<label className="font-bold text-[79px] leading-none pt-[40px] tracking-tight xs:max-md:text-[40px]">
 							I&apos;m a{" "}
 							<span className="text-violet-800">
 								Software
 								<br /> Developer
 							</span>
 						</label>
-						<p className="text-[22px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px]">
+						<p className="text-[20px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px]">
 							I have a year of experience building and designing
 							software, Currently, I love to work on web
 							application using technologies like, Java,
@@ -124,17 +124,17 @@ export default function Home() {
 
 function Contact() {
 	return (
-		<div className="py-[70px] xs:max-sm:w-[100%] flex flex-col">
+		<div className="py-[70px] xs:max-sm:w-[100%] md:max-lg:flex flex-col">
 			<a
 				href="#"
-				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-5 px-9 rounded font-bold text-center text-xl xs:max-sm:w-[100%] xs:max-sm:px-2 ">
+				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-4 px-8 rounded font-bold text-center text-md xs:max-sm:w-[100%] xs:max-sm:px-2 ">
 				Contact Me
 			</a>
 			<a
 				href="#"
 				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4 text-center mt-4">
-				View Portfolio
-				<i class="bx bx-link-external absolute bottom-6 right-16"></i>
+				View Portfolio 
+				<i class="bx bx-link-external md:max-lg:absolute bottom-6 right-16 ml-2"></i>
 			</a>
 		</div>
 	);
@@ -142,21 +142,21 @@ function Contact() {
 
 function SocialLink() {
 	return (
-		<div className="absolute right-0 flex flex-col top-[270px]  text-violet-800 text-semibold items-center md:max-lg:hidden sm:max-lg:hidden xs:max-lg:hidden">
-			<div className="flex rotate-90 items-center">
+		<div className="absolute right-0 flex flex-col top-[270px]  text-violet-800 text-semibold items-center">
+			<div className="flex rotate-90 items-center xs:max-md:hidden md:max-lg:hidden">
 				<label className="text-sm">Follow me on:</label>
 				<hr className="w-12 border-0 h-px bg-violet-800 relative left-6" />
 			</div>
 
-			<div className="flex flex-col gap-4 relative top-[100px]">
+			<div className="flex flex-col gap-4 relative top-[100px] xs:max-md:-top-[20px] xs:max-lg:-left-[30px] sm:max-lg:top-[50px] md:max-lg:top-[80px]  md:max-lg:-left-[50px] ">
 				<a href="https://www.twitter.com/samieteq" className="">
-					<i class="bx bxl-twitter bx-rotate-270 text-3xl transform transition-all hover:scale-150"></i>
+					<i class="bx bxl-twitter bx-rotate-270 text-3xl transform transition-all hover:scale-150 sm:max-lg:text-5xl"></i>
 				</a>
 				<a href="https://www.linkedin.com/in/samieteq">
-					<i class="bx bxl-linkedin-square bx-rotate-270 text-3xl transform transition-all hover:scale-150 hover:rotate-10"></i>
+					<i class="bx bxl-linkedin-square bx-rotate-270 text-3xl transform transition-all hover:scale-150 hover:rotate-10 sm:max-lg:text-5xl"></i>
 				</a>
 				<a href="https://www.github.com/samieteq">
-					<i class="bx bxl-github text-3xl transform transition-all rotate-270 hover:scale-150"></i>
+					<i class="bx bxl-github text-3xl transform transition-all rotate-270 hover:scale-150 sm:max-lg:text-5xl"></i>
 				</a>
 			</div>
 		</div>
