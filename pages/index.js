@@ -60,7 +60,7 @@ export default function Home() {
 					</div>
 					<div className="absolute right-0 lg:hidden">
 						<Image
-							className="text-slate-900 xs:max-sm:w-[35px]"
+							className="text-slate-900 xs:max-sm:w-[30px]"
 							src="/bars.svg"
 							alt="Menu Bar"
 							height={40}
@@ -83,7 +83,7 @@ export default function Home() {
 								<br /> Developer
 							</span>
 						</label>
-						<p className="text-[22px] font-medium relative top-[20px] font-medium xs:max-md:text-[20px]">
+						<p className="text-[22px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px]">
 							I have a year of experience building and designing
 							software, Currently, I love to work on web
 							application using technologies like, Java,
@@ -124,16 +124,17 @@ export default function Home() {
 
 function Contact() {
 	return (
-		<div className="py-[70px]">
+		<div className="py-[70px] xs:max-sm:w-[100%] flex flex-col">
 			<a
 				href="#"
-				className="w-12 bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-5 px-9 rounded font-bold text-xl xs:max-sm:px-4">
+				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-5 px-9 rounded font-bold text-center text-xl xs:max-sm:w-[100%] xs:max-sm:px-2 ">
 				Contact Me
 			</a>
 			<a
 				href="#"
-				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4">
-				View Portfolio <i class="bx bx-link-external absolute bottom-5 -right-2"></i>
+				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4 text-center mt-4">
+				View Portfolio
+				<i class="bx bx-link-external absolute bottom-6 right-16"></i>
 			</a>
 		</div>
 	);
