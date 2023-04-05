@@ -8,3 +8,19 @@
     font-family: 'Inter', sans-serif;
     /* background-color: rgb(198, 234, 216); */
 }
+
+body{
+    background-color: #f9fafb;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+}
+

@@ -51,10 +51,10 @@ export default function Home() {
 							Portfolio
 						</a>
 					</div>
-					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden">
+					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden transform transition-all hover:scale-105">
 						<a
 							href="https://drive.google.com/file/d/1m-Q5CZCYU5Y0E4XAeajOC7UXhTUFpSHy/view?usp=sharing"
-							className="border-2 rounded-[6px] border-violet-800 px-6 py-3 font-bold text-violet-800">
+							className="border-2 rounded-[6px] border-violet-800 px-6 py-3 font-bold text-violet-800 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 hover:text-white hover:border-violet-500">
 							Resume
 						</a>
 					</div>
@@ -117,6 +117,11 @@ export default function Home() {
 					{/*======= Image End =========== */}
 				</div>
 				<SocialLink />
+				<About />
+				<PortFolio/>
+				<Technology/>
+
+				{/* About Section */}
 			</main>
 		</>
 	);
@@ -133,7 +138,7 @@ function Contact() {
 			<a
 				href="#"
 				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4 text-center mt-4">
-				View Portfolio 
+				View Portfolio
 				<i class="bx bx-link-external md:max-lg:absolute bottom-6 right-16 ml-2"></i>
 			</a>
 		</div>
@@ -162,3 +167,126 @@ function SocialLink() {
 		</div>
 	);
 }
+
+const Technology = () => {
+	return (
+		<>
+			<div className="my-[200px] flex flex-col px-4 py-4 h-auto">
+				<h1 className="z-20 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[170px] before:h-[7px] before:bottom-0 before:left-0 ">
+					Technologies
+				</h1>
+				<p className="text-[22px] mt-10">
+					Here are some of the design software packages, programming languages and frameworks that I use frequently. I'm always looking to learn new things everyday!
+				</p>
+				<div className="mt-10 grid grid-cols-5 gap-6">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-violet-700 border-2 rounded-full flex justify-center items-center flex-col">
+							<Image src="/images/java.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">JAVA</label>
+					</div>
+
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#8bc24a] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/spring.svg" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">SPRINGBOOT</label>
+					</div>
+
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#ffd600] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/javascript-39395.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">JAVASCRIPT</label>
+					</div>
+
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#00d8ff] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/reacct.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">REACT JS</label>
+					</div>
+
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#ec5c28] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/html-5.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">HTML</label>
+					</div>
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#2b78c8] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/css-3.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">CSS</label>
+					</div>
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-black border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/github.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">GITHUB</label>
+					</div>
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#1f90ff] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/MySQL.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">MYQSL</label>
+					</div>
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#ec5c28] border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/postman.svg" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">POSTMAN</label>
+					</div>
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-violet-700 border-2 rounded-full flex justify-center items-center">
+							<Image src="/images/docker.png" height={70} width={70} alt="icon"/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">DOCKER</label>
+					</div>
+				
+				</div>
+			</div>
+		</>
+	);
+};
+const About = () => {
+	return (
+		<>
+			<div className="my-[200px] flex flex-col px-4 py-4 h-auto">
+				<h1 className="z-20 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[170px] before:h-[7px] before:bottom-0 before:left-0 ">
+					About
+				</h1>
+				<p className="text-[22px] mt-10">
+					I am a life long learning , determined and passion-driven
+					Software Engineer, building Tech Communities around Tech
+					Products and increasing engagement through user adoption by
+					working closely with the Marketing, Product, and Engineering
+					Team to come up with a clear-cut strategy to level-up user
+					onboarding. I have special interest in back-end program
+					development using Java and Javascript. Experienced in
+					designing interfaces,developing, testing and debugging
+					codes. At the moment i am building projects with Nodejs,
+					Springboot and React
+				</p>
+			</div>
+		</>
+	);
+};
+
+const PortFolio = () => {
+	return (
+		<>
+			<div className="my-[200px] flex flex-col px-4 py-4 h-auto">
+
+				<h1 className="z-20 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[245px] before:h-[7px] before:bottom-0 before:left-0 ">
+					Portfolio
+				</h1>
+				<p className="text-[22px] mt-10">
+					
+				</p>
+
+			</div>
+
+		</>
+	);
+};

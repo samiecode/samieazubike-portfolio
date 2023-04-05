@@ -14,7 +14,7 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				"hero-pattern": "url('/MAT_6779.png')",
-			},
+			}
 		},
 		screens: {
 			xs: "320px",
