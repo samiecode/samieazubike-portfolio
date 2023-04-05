@@ -176,74 +176,158 @@ const Technology = () => {
 					Technologies
 				</h1>
 				<p className="text-[22px] mt-10">
-					Here are some of the design software packages, programming languages and frameworks that I use frequently. I'm always looking to learn new things everyday!
+					Here are some of the design software packages, programming
+					languages and frameworks that I use frequently. I&apos;m
+					always looking to learn new things everyday!
 				</p>
 				<div className="mt-10 grid grid-cols-5 gap-6">
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-violet-700 border-2 rounded-full flex justify-center items-center flex-col">
-							<Image src="/images/java.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/java.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">JAVA</label>
+						<label className="font-bold text-[15px] mt-4">
+							JAVA
+						</label>
 					</div>
 
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-[#8bc24a] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/spring.svg" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/spring.svg"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">SPRINGBOOT</label>
+						<label className="font-bold text-[15px] mt-4">
+							SPRINGBOOT
+						</label>
 					</div>
 
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-[#ffd600] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/javascript-39395.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/javascript-39395.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">JAVASCRIPT</label>
+						<label className="font-bold text-[15px] mt-4">
+							JAVASCRIPT
+						</label>
 					</div>
 
-					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#00d8ff]">
 						<div className="w-[120px] h-[120px] border-[#00d8ff] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/reacct.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/reacct.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">REACT JS</label>
+						<label className="font-bold text-[15px] mt-4">
+							REACT JS
+						</label>
 					</div>
 
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-[#ec5c28] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/html-5.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/html-5.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">HTML</label>
+						<label className="font-bold text-[15px] mt-4">
+							HTML
+						</label>
 					</div>
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-[#2b78c8] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/css-3.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/css-3.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">CSS</label>
+						<label className="font-bold text-[15px] mt-4">
+							CSS
+						</label>
+					</div>
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
+						<div className="w-[120px] h-[120px] border-[#07b6d5] border-2 rounded-full flex justify-center items-center">
+							<Image
+								src="/images/tailwind-css-icon.svg"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
+						</div>
+						<label className="font-bold text-[15px] mt-4">
+							TAILWINDCSS
+						</label>
 					</div>
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-black border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/github.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/github.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">GITHUB</label>
+						<label className="font-bold text-[15px] mt-4">
+							GITHUB
+						</label>
 					</div>
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-[#1f90ff] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/MySQL.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/MySQL.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">MYQSL</label>
+						<label className="font-bold text-[15px] mt-4">
+							MYQSL
+						</label>
 					</div>
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-[#ec5c28] border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/postman.svg" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/postman.svg"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">POSTMAN</label>
+						<label className="font-bold text-[15px] mt-4">
+							POSTMAN
+						</label>
 					</div>
 					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col">
 						<div className="w-[120px] h-[120px] border-violet-700 border-2 rounded-full flex justify-center items-center">
-							<Image src="/images/docker.png" height={70} width={70} alt="icon"/>
+							<Image
+								src="/images/docker.png"
+								height={70}
+								width={70}
+								alt="icon"
+							/>
 						</div>
-						<label className="font-bold text-[15px] mt-4">DOCKER</label>
+						<label className="font-bold text-[15px] mt-4">
+							DOCKER
+						</label>
 					</div>
-				
 				</div>
 			</div>
 		</>
