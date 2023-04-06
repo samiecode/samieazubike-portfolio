@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -28,10 +29,10 @@ export default function Home() {
 			</Head>
 			<main className="px-[120px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
 				{/* Nav - Header */}
-				<div className="flex relative items-center justify-between after:content['Hello '] after:border-b-2 after:absolute after:border-violet-800 after:left-0 after:top-0 after:bg-violet-800">
+				<div className="px-[120px] z-50 bg-white border-b-[2px] opacity-95 border-gray-100 w-full fixed flex items-center justify-between left-0">
 					<a
 						href="#"
-						className="py-7 text-4xl font-bold no-underline relative xs:max-sm:text-[27px]">
+						className="py-7 text-2xl font-bold no-underline relative xs:max-sm:text-[27px]">
 						Samie Azubike
 					</a>
 					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden">
@@ -68,22 +69,22 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-				<hr className="w-[100%] border-0 h-px bg-gray-200 absolute left-0 top-22" />
+				{/* <hr className="w-[100%] border-0 h-px bg-gray-200 absolute left-0 top-22" /> */}
 
 				{/* Hero */}
 				<div
 					className="flex relative top-[80px] justify-between   md:max-lg:flex-col 
-				sm:max-lg:flex-col min-[320px]:max-lg:flex-col">
+				sm:max-lg:flex-col min-[320px]:max-lg:flex-col pt-[90px]">
 					{/* Description  */}
 					<div className="w-[50%] md:max-lg:w-[100%] sm:max-lg:w-[100%] h-auto relative md:max-lg:top-[600px]  sm:max-lg:top-[500px] xs:max-md:w-[100%] xs:max-md:top-[300px]">
-						<label className="font-bold text-[79px] leading-none pt-[40px] tracking-tight xs:max-md:text-[40px]">
+						<label className="font-bold text-[70px] leading-none pt-[40px] tracking-tight xs:max-md:text-[40px]">
 							I&apos;m a{" "}
 							<span className="text-violet-800">
 								Software
 								<br /> Developer
 							</span>
 						</label>
-						<p className="text-[20px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px]">
+						<p className="text-[18px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px]">
 							I have a year of experience building and designing
 							software, Currently, I love to work on web
 							application using technologies like, Java,
@@ -118,8 +119,9 @@ export default function Home() {
 				</div>
 				<SocialLink />
 				<About />
-				<PortFolio/>
-				<Technology/>
+				<PortFolio />
+				<Technology />
+				<Footer />
 
 				{/* About Section */}
 			</main>
@@ -132,14 +134,14 @@ function Contact() {
 		<div className="py-[70px] xs:max-sm:w-[100%] xs:max-lg:flex md:max-lg:flex flex-col">
 			<a
 				href="#"
-				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-4 px-8 rounded font-bold text-center text-md xs:max-sm:w-[100%] xs:max-sm:px-2 ">
+				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-4 px-8 rounded font-bold text-center text-md xs:max-sm:w-[100%] xs:max-sm:px-2 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-600">
 				Contact Me
 			</a>
 			<a
 				href="#"
 				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4 text-center mt-4">
 				View Portfolio
-				<i class="bx bx-link-external md:max-lg:absolute bottom-6 right-16 ml-2"></i>
+				<i class="bx bx-link-external md:max-lg:absolute bottom-6 right-16 ml-2 transform transition-all hover:scale-110"></i>
 			</a>
 		</div>
 	);
@@ -171,7 +173,7 @@ function SocialLink() {
 const Technology = () => {
 	return (
 		<>
-			<div className="my-[200px] flex flex-col px-4 py-4 h-auto">
+			<div className="my-[100px] flex flex-col px-4 py-4 h-auto">
 				<h1 className="z-20 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[170px] before:h-[7px] before:bottom-0 before:left-0 ">
 					Technologies
 				</h1>
@@ -180,8 +182,8 @@ const Technology = () => {
 					languages and frameworks that I use frequently. I&apos;m
 					always looking to learn new things everyday!
 				</p>
-				<div className="mt-10 grid grid-cols-5 gap-6">
-					<div className="px-2 py-2 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#7fa4ec]">
+				<div className="mt-10 grid grid-cols-5 gap-6 items-center">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#7fa4ec]">
 						<div className="w-[80px] h-[80px] border-[#7fa4ec] border-2 rounded-full flex justify-center items-center flex-col">
 							<Image
 								src="/images/java.png"
@@ -195,7 +197,7 @@ const Technology = () => {
 						</label>
 					</div>
 
-					<div className="px-2 py-2 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#8bc24a]">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#8bc24a]">
 						<div className="w-[80px] h-[80px] border-[#8bc24a] border-2 rounded-full flex justify-center items-center">
 							<Image
 								src="/images/spring.svg"
@@ -209,7 +211,7 @@ const Technology = () => {
 						</label>
 					</div>
 
-					<div className="px-2 py-2 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#ffd600]">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#ffd600]">
 						<div className="w-[80px] h-[80px] border-[#ffd600] border-2 rounded-full flex justify-center items-center">
 							<Image
 								src="/images/javascript-39395.png"
@@ -237,7 +239,7 @@ const Technology = () => {
 						</label>
 					</div>
 
-					<div className="px-2 py-2 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#ec5c28]">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#ec5c28]">
 						<div className="w-[80px] h-[80px] border-[#ec5c28] border-2 rounded-full flex justify-center items-center">
 							<Image
 								src="/images/html-5.png"
@@ -302,7 +304,7 @@ const Technology = () => {
 							MYQSL
 						</label>
 					</div>
-					<div className="px-2 py-2 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#ec5c28]">
+					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#ec5c28]">
 						<div className="w-[80px] h-[80px] border-[#ec5c28] border-2 rounded-full flex justify-center items-center">
 							<Image
 								src="/images/postman.svg"
@@ -315,7 +317,7 @@ const Technology = () => {
 							POSTMAN
 						</label>
 					</div>
-					<div className="px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#2597ef]">
+					<div className="self-center px-2 py-4 bg-white drop-shadow-md rounded-md flex justify-center items-center transform transition-all hover:scale-110 flex-col hover:border-2 hover:border-[#2597ef]">
 						<div className="w-[80px] h-[80px] border-[#2597ef] border-2 rounded-full flex justify-center items-center">
 							<Image
 								src="/images/docker.png"
@@ -349,8 +351,8 @@ const About = () => {
 					onboarding. I have special interest in back-end program
 					development using Java and Javascript. Experienced in
 					designing interfaces,developing, testing and debugging
-					codes. At the moment i am building projects with
-					Springboot and React
+					codes. At the moment i am building projects with Springboot
+					and React
 				</p>
 			</div>
 		</>
@@ -361,16 +363,71 @@ const PortFolio = () => {
 	return (
 		<>
 			<div className="my-[200px] flex flex-col px-4 py-4 h-auto">
-
 				<h1 className="z-20 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[245px] before:h-[7px] before:bottom-0 before:left-0 ">
 					Portfolio
 				</h1>
-				<p className="text-[22px] mt-10">
-					
-				</p>
-
+				<p className="text-[22px] mt-10"></p>
 			</div>
+		</>
+	);
+};
 
+const Footer = () => {
+	return (
+		<>
+			<div className="flex flex-col justify-center items-center mb-10">
+				<span className="text-[20px] font-bold text-violet-800">
+					Collaborations are welcome
+				</span>
+				<span className="text-[36px] font-bold text-violet-900">
+					Let&apos;s Work Together🤝
+				</span>
+				<p className="w-2/4 text-center text-violet-900 font-[500]">
+					You can reach out to me via Email or any of the social media
+					icon below you can stay in touch with me on Twitter and
+					Github where I post my works
+				</p>
+			</div>
+			<hr className="w-fullborder-0 h-px bg-gray-200 " />
+			<div className="px-12">
+				<div className="h-[200px] bg-gradient-to-r from-violet-700 to-fuchsia-600 absolute left-0 w-full px-[80px]">
+					<div className=" flex justify-between">
+						<div className="py-7">
+							<h2 className="text-3xl font-bold text-white">
+								Samie Azubike
+							</h2>
+							<label className="text-gray-100">
+								Software Developer
+							</label>
+						</div>
+						<div className="py-7">
+							<h3 className="font-semibold text-gray-100">
+								EMAIL
+							</h3>
+							<label className="font-bold text-gray-50 text-[20px]">
+								codewithsamie@gmail.com
+							</label>
+						</div>
+
+						<div className="flex gap-5 py-7 ">
+							<a
+								href="https://www.twitter.com/samieteq"
+								className="">
+								<i class="bx bxl-twitter bx-rotate-270 text-3xl transform transition-all hover:scale-150 sm:max-lg:text-5xl xs:max-md:text-2xl text-gray-50"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/samieteq">
+								<i class="bx bxl-linkedin-square bx-rotate-270 text-3xl transform transition-all hover:scale-150 hover:rotate-10 sm:max-lg:text-5xl xs:max-md:text-2xl text-gray-50 "></i>
+							</a>
+							<a href="https://www.github.com/samieteq">
+								<i class="bx bxl-github text-3xl transform transition-all rotate-270 hover:scale-150 sm:max-lg:text-5xl xs:max-md:text-2xl text-gray-50"></i>
+							</a>
+						</div>
+					</div>
+					<span className="flex text-gray-200 mt-9">
+						&#169; Copyright 2023 Samieteq
+					</span>
+				</div>
+			</div>
 		</>
 	);
 };
