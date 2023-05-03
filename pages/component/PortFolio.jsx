@@ -10,15 +10,8 @@ const PortFolio = () => {
 				<div className="flex flex-row justify-between">
 					<Project
 						link="https://github.com/samieteq/bobfi"
-						image="bobfi-splash-screen"
-					/>
-					<Project
-						link="https://github.com/samieteq/bobfi"
-						image="bobfi-splash-screen"
-					/>
-					<Project
-						link="https://github.com/samieteq/bobfi"
-						image="bobfi-splash-screen"
+                        image="bobfi-splash-screen"
+                        name="Bobfi"
 					/>
 				</div>
 			</div>
