@@ -15,7 +15,7 @@ export default function Project ({link, image, name}){
 					<h1 className="flex items-center justify-center relative text-center font-bold text-3xl text-violet-900">
 						{name}
 					</h1>
-					<hr className="w-[20%] border-2 border-fuchsia-500 h-px bg-violet-800 relative top-22 left-[134px]" />
+					<hr className="w-[20%] border-2 border-fuchsia-500 h-px bg-violet-800 relative top-22 left-[120px]" />
 					<h1 className="text-center text-[14px]">
 						An application that manages your task, project, message,
 						client, and helps you communicate with your team.
