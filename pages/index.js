@@ -362,11 +362,16 @@ const About = () => {
 const PortFolio = () => {
 	return (
 		<>
-			<div className="my-[200px] flex flex-col px-4 py-4 h-auto">
+			<div className="my-[200px] flex flex-col px-4 py-4 h-auto gap-10">
 				<h1 className="z-20 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[245px] before:h-[7px] before:bottom-0 before:left-0 ">
 					Portfolio
 				</h1>
-				<p className="text-[22px] mt-10">To be added soon...</p>
+				<div className="flex w-full">
+					<Project
+						link="https://github.com/samieteq/bobfi"
+						image="bobfi-splash-screen"
+					/>
+				</div>
 			</div>
 		</>
 	);
@@ -426,6 +431,43 @@ const Footer = () => {
 					<span className="flex text-gray-200 mt-9">
 						&#169; Copyright 2023 Samieteq
 					</span>
+				</div>
+			</div>
+		</>
+	);
+};
+
+const Project = ({link, image}) => {
+	return (
+		<>
+			<div className="w-[340px] rounded drop-shadow-md h-auto ">
+				<div className="w-full h-[180px] bg-white px-2 py-2">
+					<img
+						className="w-full h-full"
+						src={`/images/${image}.png`}
+						alt="project image"
+					/>
+				</div>
+				<div className="bg-white px-6 py-6 flex flex-col gap-3">
+					<h1 className="text-center">
+						A modern UI/UX restaurant website that can be utilized
+						for commercial purposes.
+					</h1>
+					<div>
+						<h2 className="text-center font-bold text-md">
+							Stack:
+						</h2>
+						<ul className="flex justify-around font-semibold text-violet-900 py-2">
+							<li>Core Java</li>
+							<li>JavaFx</li>
+							<li>MySQL</li>
+						</ul>
+					</div>
+					<Link
+						href={link}
+						className="bg-gradient-to-r from-violet-500 to-fuchsia-500 self-start text-white font-semibold rounded-full px-4 py-2 text-[14px]">
+						Source
+					</Link>
 				</div>
 			</div>
 		</>
