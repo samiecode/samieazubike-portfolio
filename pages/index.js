@@ -34,7 +34,7 @@ export default function Home() {
 			</Head>
 			<main className="px-[100px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
 				{/* Nav - Header */}
-				<div className="px-[120px] z-50 bg-white border-b-[2px] opacity-95 border-gray-100 w-full fixed flex items-center justify-between left-0">
+				<div className="px-[120px] z-50 bg-white border-b-[2px]  border-gray-100 w-full fixed flex items-center justify-between left-0">
 					<a
 						href="#"
 						className="py-7 text-2xl font-bold no-underline relative xs:max-sm:text-[27px]">
