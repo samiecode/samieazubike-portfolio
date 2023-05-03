@@ -32,7 +32,7 @@ export default function Home() {
 					crossorigin="anonymous"
 					async></script>
 			</Head>
-			<main className="px-[120px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
+			<main className="px-[100px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
 				{/* Nav - Header */}
 				<div className="px-[120px] z-50 bg-white border-b-[2px] opacity-95 border-gray-100 w-full fixed flex items-center justify-between left-0">
 					<a
