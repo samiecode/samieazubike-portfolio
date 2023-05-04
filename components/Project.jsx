@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Project ({link, image, name}){
+const Project =({link, image, name}) =>{
 	return (
 		<>
 			<div className="w-[350px] rounded drop-shadow-md h-auto ">
@@ -40,3 +40,6 @@ export default function Project ({link, image, name}){
 		</>
 	);
 };
+
+export default Project
+

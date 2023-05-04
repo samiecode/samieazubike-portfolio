@@ -1,4 +1,4 @@
-export default function Contact() {
+const Contact =()=> {
 	return (
 		<div className="py-[70px] xs:max-sm:w-[100%] xs:max-lg:flex md:max-lg:flex flex-col">
 			<a
@@ -10,8 +10,10 @@ export default function Contact() {
 				href="#"
 				className="relative py-5 px-9 rounded font-bold text-xl text-violet-800 xs:max-sm:px-4 text-center mt-4">
 				View Portfolio
-				<i class="bx bx-link-external md:max-lg:absolute bottom-6 right-16 ml-2 transform transition-all hover:scale-110"></i>
+				<i className="bx bx-link-external md:max-lg:absolute bottom-6 right-16 ml-2 transform transition-all hover:scale-110"></i>
 			</a>
 		</div>
 	);
 }
+
+export default Contact

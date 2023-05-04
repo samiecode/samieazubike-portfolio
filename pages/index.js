@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import Contact from "./component/Contact";
-import Footer from "./component/Footer";
-import Technology from "./component/Technology";
-import About from "./component/About";
-import SocialLink from "./component/SocialLink";
-import PortFolio from "./component/PortFolio";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Technology from "@/components/Technology";
+import About from "@/components/About";
+import SocialLink from "@/components/SocialLink";
+import PortFolio from "@/components/PortFolio";
 
 export default function Home() {
 	return (
@@ -24,13 +24,6 @@ export default function Home() {
 				<link
 					href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 					rel="stylesheet"></link>
-				{/* <script
-					src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
-					async></script> */}
-				<script
-					src="https://kit.fontawesome.com/07e60f2f11.js"
-					crossorigin="anonymous"
-					async></script>
 			</Head>
 			<main className="px-[100px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
 				{/* Nav - Header */}
