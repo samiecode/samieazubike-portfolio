@@ -25,48 +25,8 @@ export default function Home() {
 					href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 					rel="stylesheet"></link>
 			</Head>
-			<main className="px-[100px] md:max-lg:px-20 sm:max-lg:px-12 xs:max-md:px-7 relative">
-				{/* Nav - Header */}
-				<div className="px-[120px] z-50 bg-white border-b-[2px]  border-gray-100 w-full fixed flex items-center justify-between left-0">
-					<a
-						href="#"
-						className="py-7 text-2xl font-bold no-underline relative xs:max-sm:text-[27px]">
-						Samie Azubike
-					</a>
-					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden">
-						<a
-							href="#"
-							className="no-underline px-4 py-1 font-bold hover:text-violet-800">
-							About
-						</a>
-						<a
-							href="#"
-							className="no-underline px-4 py-1 font-bold hover:text-violet-800">
-							Skills
-						</a>
-						<a
-							href="#"
-							className="no-underline px-4 py-1 font-bold hover:text-violet-800 ">
-							Portfolio
-						</a>
-					</div>
-					<div className="md:max-lg:hidden sm:max-lg:hidden xs:max-md:hidden transform transition-all hover:scale-105">
-						<a
-							href="https://drive.google.com/file/d/1m-Q5CZCYU5Y0E4XAeajOC7UXhTUFpSHy/view?usp=sharing"
-							className="border-2 rounded-[6px] border-violet-800 px-6 py-3 font-bold text-violet-800 hover:bg-gradient-to-r hover:from-violet-500 hover:to-fuchsia-500 hover:text-white hover:border-violet-500">
-							Resume
-						</a>
-					</div>
-					<div className="absolute right-0 lg:hidden">
-						<Image
-							className="text-slate-900 xs:max-sm:w-[30px]"
-							src="/bars.svg"
-							alt="Menu Bar"
-							height={40}
-							width={40}
-						/>
-					</div>
-				</div>
+			<main className="px-[100px] px-20 relative">
+					
 				{/* <hr className="w-[100%] border-0 h-px bg-gray-200 absolute left-0 top-22" /> */}
 
 				{/* Hero */}
