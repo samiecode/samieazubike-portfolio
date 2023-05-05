@@ -4,7 +4,7 @@ const Contact =()=> {
 			<a
 				href="#"
 				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-4 px-8 rounded font-bold text-center text-md xs:max-sm:w-[100%] xs:max-sm:px-2 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-600">
-				Contact Me
+				Hire Me
 			</a>
 			<a
 				href="#"

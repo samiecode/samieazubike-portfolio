@@ -1,38 +1,42 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-const Project =({link, image, name}) =>{
+const Project = ({link, image, name, stack, des, bgcolor}) => {
 	return (
 		<>
-			<div className="w-[350px] rounded drop-shadow-md h-auto ">
-				<div className="w-full h-[180px] bg-white px-2 py-2">
+			<div className="project w-[386px] drop-shadow-md h-auto rounded-[10px] xs:max-md:w-[80%]">
+				<div
+					className={`w-full h-[200px] bg-white flex items-center justify-center bg-${bgcolor}`}
+					style={{background: bgcolor}}>
 					<img
-						className="w-full h-full"
-						src={`/images/${image}.png`}
+						className="w-[60%] h-[60%] rounded-md drop-shadow-md object-contain"
+						src={`/images/${image}`}
 						alt="project image"
 					/>
 				</div>
 				<div className="bg-white px-6 py-6 flex flex-col gap-3">
-					<h1 className="flex items-center justify-center relative text-center font-bold text-3xl text-violet-900">
+					<h1 className="relative font-bold text-2xl text-violet-900">
 						{name}
 					</h1>
-					<hr className="w-[20%] border-2 border-fuchsia-500 h-px bg-violet-800 relative top-22 left-[120px]" />
-					<h1 className="text-center text-[14px]">
-						An application that manages your task, project, message,
-						client, and helps you communicate with your team.
-					</h1>
 					<div>
-						<h2 className="text-center font-bold text-md text-violet-900">
-							Stack
-						</h2>
-						<ul className="flex justify-around font-semibold text-violet-900 py-2">
-							<li>Core Java</li>
-							<li>JavaFx</li>
-							<li>MySQL</li>
+						<ul className="flex flex-wrap gap-5 font-semibold text-violet-900 py-2 h-[50px] leading-[7px] ">
+							{stack.map((item, key) => (
+								<>
+									<li
+										key={key}
+										className="flex items-center gap-2 self-start">
+										<span className="block bg-gradient-to-r from-violet-500 to-fuchsia-500 h-[10px] w-[10px] rounded-full"></span>
+										{item}
+									</li>
+								</>
+							))}
 						</ul>
 					</div>
+
+					<h1 className=" text-[14px] h-[80px]">{des}</h1>
+
 					<Link
 						href={link}
-						className="bg-gradient-to-r from-violet-500 to-fuchsia-500 self-start text-white font-semibold rounded-full px-4 py-2 text-[14px]">
+						className="bg-gradient-to-r from-violet-500 to-fuchsia-500 self-start text-white font-semibold rounded-full px-4 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500">
 						Source
 					</Link>
 				</div>
@@ -41,5 +45,4 @@ const Project =({link, image, name}) =>{
 	);
 };
 
-export default Project
-
+export default Project;

@@ -5,7 +5,7 @@ export default function Technology() {
 		<>
 			<div id="skills" className="grid grid-cols-12">
 				<div className="col-start-2 col-span-11 my-[100px] flex flex-col px-4 py-4 h-auto xs:max-md:col-span-11 xs:max-md:col-start-2 xs:max-md:col-span-11">
-					<h1 className="z-60 text-black relative before:-bottom-1 font-bold text-6xl before:z-10 before:content-[''] before:bg-gradient-to-r before:from-violet-500 before:to-fuchsia-500 before:absolute before:w-[170px] before:h-[7px] before:bottom-0 before:left-0 xs:max-sm:text-[44px] xs:max-sm:text-[40px] xs:max-sm:before:w-[275px] xs:max-sm:before:h-[5px] before:z-10">
+					<h1 className="text-black relative before:-bottom-1 font-bold text-6xl border-b-[6px] border-violet-800 w-fit xs:max-xm:text-[40px]">
 						Technologies
 					</h1>
 					<p className="text-[22px] mt-5 xs:max-xm:text-[16px]">
