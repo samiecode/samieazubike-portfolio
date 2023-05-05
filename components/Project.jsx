@@ -3,7 +3,7 @@ import Link from "next/link";
 const Project = ({link, image, name, stack, des, bgcolor}) => {
 	return (
 		<>
-			<div className="project w-[386px] drop-shadow-md h-auto rounded-[10px] xs:max-md:w-[90%]">
+			<div className="project w-[370px] drop-shadow-md h-auto rounded-[10px] xs:max-md:w-[90%]">
 				<div
 					className={`w-full h-[200px] bg-white flex items-center justify-center bg-${bgcolor}`}
 					style={{background: bgcolor}}>
