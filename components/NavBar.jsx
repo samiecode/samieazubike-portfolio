@@ -20,12 +20,11 @@ const NavBar = () => {
 		}));
 	}
 	const [isToggle, setIsToggle] = useState(false)
+	
 	useEffect(() => {
 
 		const handleScroll = () => {
-			// Your scroll event handler code here
-			console.log("Page scrolled");
-			console.log(window.pageYOffset);
+			//scroll event handler code
 			if (window.pageYOffset > 408 && window.pageYOffset <= 857) {
 				handleSetActiveLink("about", true)
 			}
