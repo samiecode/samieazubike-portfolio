@@ -3,6 +3,7 @@ import MinNavBar from "@/components/MinNavBar";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+import { Link, animateScroll as scroll} from 'react-scroll'
 
 const NavBar = () => {
 	const [isToggle, setIsToggle] = useState(false)
@@ -11,29 +12,45 @@ const NavBar = () => {
 		<>
 			<div className="fixed top-0 h-[70px] grid grid-cols-12 z-50 bg-white border-b-[2px]  border-gray-100 w-full items-center">
 				<div className="col-start-2 col-span-3 xs:max-lg:col-span-8 xs:max-lg:col-start-2">
-					<a
-						href="#"
-						className="text-2xl font-bold no-underline relative">
+					<Link
+						activeClass="active"
+						to="home"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="text-2xl font-bold no-underline relative cursor-pointer">
 						Samie Azubike
-					</a>
+					</Link>
 				</div>
 
 				<div className="col-start-6 xs:max-lg:hidden">
-					<a
-						href="#"
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800">
+					<Link
+						activeClass="active"
+						to="about"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
 						About
-					</a>
-					<a
-						href="#"
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800">
+					</Link>
+					<Link
+						activeClass="active"
+						to="skills"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
 						Skills
-					</a>
-					<a
-						href="#"
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800 ">
+					</Link>
+					<Link
+						activeClass="active"
+						to="portfolio"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
 						Portfolio
-					</a>
+					</Link>
 				</div>
 				<div className="col-start-11 xs:max-lg:hidden">
 					<div className="transform transition-all  ease-in-out duration-500 hover:scale-105">

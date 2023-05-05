@@ -1,4 +1,5 @@
-const MinNavBar = ({isToggle}) => {
+import {Link, animateScroll as scroll} from "react-scroll"
+const MinNavBar = ({ isToggle }) => {
     return (
 		<>
 			<div
@@ -8,23 +9,35 @@ const MinNavBar = ({isToggle}) => {
 						: "-right-[300px]"
 				} fixed top-0 `}>
 				<div className="relative text-[24px] flex flex-col items-center top-28 gap-4 ">
-					<a
-						href="#"
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800">
+					<Link
+						activeClass="active"
+						to="about"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
 						About
-					</a>
-					<a
-						href="#"
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800">
+					</Link>
+					<Link
+						activeClass="active"
+						to="skills"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
 						Skills
-					</a>
-					<a
-						href="#"
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800 ">
+					</Link>
+					<Link
+						activeClass="active"
+						to="portfolio"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
 						Portfolio
-					</a>
+					</Link>
 				</div>
-				<div className="relative top-[200px] text-xl transform transition-all  ease-in-out duration-500 hover:scale-105">
+				<div className="relative top-[200px] text-xl transform transition-all  ease-in-out duration-500 hover:scale-105 ">
 					<a
 						href="https://drive.google.com/file/d/1m-Q5CZCYU5Y0E4XAeajOC7UXhTUFpSHy/view?usp=sharing"
 						className="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full text-white px-12 py-2 font-bold hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500 hover:text-white hover:border-violet-500">

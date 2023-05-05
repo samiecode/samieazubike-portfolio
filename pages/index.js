@@ -7,7 +7,9 @@ import About from "@/components/About";
 import SocialLink from "@/components/SocialLink";
 import PortFolio from "@/components/PortFolio";
 
+
 export default function Home() {
+
 	return (
 		<>
 			<Head>
@@ -26,7 +28,7 @@ export default function Home() {
 					rel="stylesheet"></link>
 			</Head>
 			<main className="relative">
-				<div className="grid grid-cols-12 relative top-[80px] pt-[90px]">
+				<div id="home" className="grid grid-cols-12 relative top-[80px] pt-[90px]">
 					{/* Description  */}
 					<div className="relative h-auto col-start-2 col-span-5 xs:max-lg:order-last xs:max-lg:col-start-2 xs:max-lg:col-span-10 xs:max-lg:top-[100px]">
 						<label className="font-bold text-[70px] leading-none pt-[40px] tracking-tight xs:max-lg:block xs:max-xm:text-[40px]">
