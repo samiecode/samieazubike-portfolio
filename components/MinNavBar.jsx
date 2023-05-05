@@ -1,5 +1,5 @@
 import {Link, animateScroll as scroll} from "react-scroll"
-const MinNavBar = ({ isToggle }) => {
+const MinNavBar = ({ isToggle, isActive }) => {
     return (
 		<>
 			<div
@@ -34,7 +34,7 @@ const MinNavBar = ({ isToggle }) => {
 						offset={-70}
 						duration={500}
 						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
-						Portfolio
+						My Projects
 					</Link>
 				</div>
 				<div className="relative top-[200px] text-xl transform transition-all  ease-in-out duration-500 hover:scale-105 ">

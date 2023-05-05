@@ -6,9 +6,13 @@ import Technology from "@/components/Technology";
 import About from "@/components/About";
 import SocialLink from "@/components/SocialLink";
 import PortFolio from "@/components/PortFolio";
+import { useEffect } from "react";
 
 
 export default function Home() {
+	useEffect(() => {
+		console.log(window.pageYOffset);
+	});
 
 	return (
 		<>

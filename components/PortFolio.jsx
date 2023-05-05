@@ -32,9 +32,9 @@ const PortFolio = () => {
 			<div id="portfolio" className="grid grid-cols-12 ">
 				<div className="col-start-2 col-span-11 my-[100px] flex flex-col h-auto gap-10">
 					<h1 className="text-black relative before:-bottom-1 font-bold text-6xl border-b-[6px] border-violet-800 w-fit xs:max-xm:text-[40px]">
-						Portfolio
+						Projects
 					</h1>
-					<div className="relative -left-10 flex flex-row gap-5 flex-wrap justify-center">
+					<div className="relative -left-10 flex flex-row gap-5 flex-wrap justify-center xs:max-sm:-left-4">
 						{project.map((item, key) => (
 							<>
 								<Project

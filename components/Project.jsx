@@ -3,7 +3,7 @@ import Link from "next/link";
 const Project = ({link, image, name, stack, des, bgcolor}) => {
 	return (
 		<>
-			<div className="project w-[386px] drop-shadow-md h-auto rounded-[10px] xs:max-md:w-[80%]">
+			<div className="project w-[386px] drop-shadow-md h-auto rounded-[10px] xs:max-md:w-[90%]">
 				<div
 					className={`w-full h-[200px] bg-white flex items-center justify-center bg-${bgcolor}`}
 					style={{background: bgcolor}}>
@@ -18,7 +18,7 @@ const Project = ({link, image, name, stack, des, bgcolor}) => {
 						{name}
 					</h1>
 					<div>
-						<ul className="flex flex-wrap gap-5 font-semibold text-violet-900 py-2 h-[50px] leading-[7px] ">
+						<ul className="flex flex-wrap gap-5 font-semibold text-violet-900 py-2 h-[50px] leading-[7px]  xs:max-sm:h-auto">
 							{stack.map((item, key) => (
 								<>
 									<li
@@ -32,7 +32,7 @@ const Project = ({link, image, name, stack, des, bgcolor}) => {
 						</ul>
 					</div>
 
-					<h1 className=" text-[14px] h-[80px]">{des}</h1>
+					<h1 className=" text-[14px] h-[80px] xs:max-sm:h-auto">{des}</h1>
 
 					<Link
 						href={link}

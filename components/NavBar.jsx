@@ -4,9 +4,56 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { Link, animateScroll as scroll} from 'react-scroll'
+import { useEffect } from "react";
 
 const NavBar = () => {
+	const [activeLink, setActiveLink] = useState({
+		about: false,
+		skills: false,
+		projects: false
+	})
+
+	const handleSetActiveLink = (name, value) => {
+		setActiveLink((pre) => ({
+			...pre,
+			[name]: value,
+		}));
+	}
 	const [isToggle, setIsToggle] = useState(false)
+	useEffect(() => {
+
+		const handleScroll = () => {
+			// Your scroll event handler code here
+			console.log("Page scrolled");
+			console.log(window.pageYOffset);
+			if (window.pageYOffset > 408 && window.pageYOffset <= 857) {
+				handleSetActiveLink("about", true)
+			}
+			else {
+				handleSetActiveLink("about", false)
+			}
+
+			if (window.pageYOffset > 857 && window.pageYOffset <= 1584) {
+				handleSetActiveLink("projects", true);
+			} else {
+				handleSetActiveLink("projects", false);
+			}
+
+			if (window.pageYOffset > 1584) {
+				handleSetActiveLink("skills", true);
+			} else {
+				handleSetActiveLink("skills", false);
+			}
+			
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+
+	},[]);
 
 	return (
 		<>
@@ -23,24 +70,17 @@ const NavBar = () => {
 					</Link>
 				</div>
 
-				<div className="col-start-6 xs:max-lg:hidden">
+				<div className="col-start-6  col-span-4 xs:max-lg:hidden">
 					<Link
 						activeClass="active"
 						to="about"
 						smooth={true}
 						offset={-70}
 						duration={500}
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
+						className={`no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer transition duration-500 ease-in-out ${
+							activeLink.about ? "text-violet-600" : ""
+						}`}>
 						About
-					</Link>
-					<Link
-						activeClass="active"
-						to="skills"
-						smooth={true}
-						offset={-70}
-						duration={500}
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
-						Skills
 					</Link>
 					<Link
 						activeClass="active"
@@ -48,8 +88,21 @@ const NavBar = () => {
 						smooth={true}
 						offset={-70}
 						duration={500}
-						className="no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer">
-						Portfolio
+						className={`no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer transition duration-500 ease-in-out ${
+							activeLink.projects ? "text-violet-600" : ""
+						}`}>
+						My Projects
+					</Link>
+					<Link
+						activeClass="active"
+						to="skills"
+						smooth={true}
+						offset={-70}
+						duration={500}
+						className={`no-underline px-4 py-1 font-bold hover:text-violet-800 cursor-pointer transition duration-500 ease-in-out ${
+							activeLink.skills ? "text-violet-600" : ""
+						}`}>
+						Skills
 					</Link>
 				</div>
 				<div className="col-start-11 xs:max-lg:hidden">
@@ -80,7 +133,7 @@ const NavBar = () => {
 				</div>
 			</div>
 
-			<MinNavBar isToggle={isToggle} />
+			<MinNavBar isToggle={isToggle} isActive={activeLink} />
 		</>
 	);
 };
