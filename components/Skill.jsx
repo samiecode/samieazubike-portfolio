@@ -1,5 +1,6 @@
 import Image from "next/image";
-const Skill = ({color, img, name}) => {
+const Skill = ({ color, img, name }) => {
+    
 	return (
 		<>
 			<div
