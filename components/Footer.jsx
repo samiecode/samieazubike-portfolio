@@ -36,13 +36,13 @@ const Footer = () => {
 
 				<div className="relative -left-16 col-start-11 flex gap-5 py-7 xs:max-lg:col-start-9 xs:max-lg:col-span-3 xs:max-lg:order-last xs:max-sm:col-start-2 xs:max-sm:left-0  xs:max-sm:py-0 xs:max-md:col-start-8">
 					<a href="https://www.twitter.com/samieteq" className="">
-						<i className="bx bxl-twitter bx-rotate-270 text-5xl transform transition-all hover:scale-150  text-gray-50"></i>
+						<i className="bx bxl-twitter bx-rotate-270 text-5xl transform transition-all hover:scale-150  text-gray-50 xs:max-xml:text-4xl"></i>
 					</a>
 					<a href="https://www.linkedin.com/in/samieteq">
-						<i className="bx bxl-linkedin-square bx-rotate-270 text-5xl transform transition-all hover:scale-150 hover:rotate-10 text-gray-50 "></i>
+						<i className="bx bxl-linkedin-square bx-rotate-270 text-5xl transform transition-all hover:scale-150 hover:rotate-10 text-gray-50 xs:max-xml:text-4xl"></i>
 					</a>
 					<a href="https://www.github.com/samieteq">
-						<i className="bx bxl-github text-5xl transform transition-all rotate-270 hover:scale-150 s text-gray-50"></i>
+						<i className="bx bxl-github text-5xl transform transition-all rotate-270 hover:scale-150 s text-gray-50 xs:max-xml:text-4xl"></i>
 					</a>
 				</div>
 				<div className="col-start-2 col-span-5 xs:max-lg:col-start-2 xs:max-sm:order-last">
