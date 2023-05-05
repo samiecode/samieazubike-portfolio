@@ -18,6 +18,8 @@ module.exports = {
 		},
 		screens: {
 			xs: "320px",
+			xm: "570px",
+			xml: "420px",
 			...defaultTheme.screens,
 		},
 	},

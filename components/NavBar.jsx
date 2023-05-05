@@ -45,7 +45,7 @@ const NavBar = () => {
 					</div>
 				</div>
 				<div
-					className="relative flex items-center justify-center  col-end-13 right-0 lg:hidden bg-gray-50 w-[50px] h-[50px] rounded-full"
+					className="relative flex items-center justify-center  col-end-13 right-0 lg:hidden bg-gray-50 w-[50px] h-[50px] rounded-full xs:max-md:col-start-12 xs:max-md:-left-7"
 					onClick={(e) => {
 						setIsToggle(!isToggle);
 						console.log(e);
