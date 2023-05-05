@@ -39,7 +39,7 @@ const MinNavBar = ({ isToggle, isActive }) => {
 				</div>
 				<div className="relative top-[200px] text-xl transform transition-all  ease-in-out duration-500 hover:scale-105 ">
 					<a
-						href="https://drive.google.com/file/d/1m-Q5CZCYU5Y0E4XAeajOC7UXhTUFpSHy/view?usp=sharing"
+						href="https://drive.google.com/file/d/1wAkS7_SJR28XunCMzcOP6kCPdPY7CtQx/view?usp=sharing"
 						className="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-full text-white px-12 py-2 font-bold hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500 hover:text-white hover:border-violet-500">
 						Resume
 					</a>
