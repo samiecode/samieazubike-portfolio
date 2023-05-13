@@ -29,7 +29,7 @@ const Footer = () => {
 
 				<div className="col-start-6 py-7 xs:max-lg:col-start-8 xs:max-sm:col-start-2 xs:max-sm:py-0 xs:max-md:col-start-7">
 					<h3 className="font-semibold text-gray-100">EMAIL</h3>
-					<a href="mailto:codewithsamie@gmail.com" className="font-bold text-gray-50 text-[20px]">
+					<a href="mailto:codewithsamie@gmail.com" className="font-bold text-gray-50 text-[20px] hover:underline">
 						codewithsamie@gmail.com
 					</a>
 				</div>
