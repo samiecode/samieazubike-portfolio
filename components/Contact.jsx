@@ -3,7 +3,7 @@ const Contact = () => {
 	return (
 		<div className="py-[70px] xs:max-sm:w-[100%] xs:max-lg:flex md:max-lg:flex flex-col">
 			<a
-				href="#"
+				href={`mailto:"codewithsamie@gmail.com"`}
 				className="bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white py-4 px-8 rounded font-bold text-center text-md xs:max-sm:w-[100%] xs:max-sm:px-2 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-600">
 				Hire Me
 			</a>
