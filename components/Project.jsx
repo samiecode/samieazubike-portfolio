@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-function Project({link, bgcolor, image, name, stack, des}) {
+function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 	return (
 		<>
-			<div className="w-[370px] h-auto bg-gray-100 rounded-xl px-4 py-4">
+			<div className="drop-shadow-sm w-[370px] h-auto bg-gray-100 rounded-xl px-4 py-4">
 				<div
 					className={`w-full bg-white h-[150px] flex items-center justify-center ${bgcolor} py-5 rounded-md`}
 				>
 					<Image
-						className="w-[80%] h-[80%] rounded-md drop-shadow-md object-contain"
+						className="w-[100%] h-[100%] rounded-md drop-shadow-sm object-contain"
 						src={`/images/${image}`}
 						height={300}
 						width={300}
@@ -37,15 +37,23 @@ function Project({link, bgcolor, image, name, stack, des}) {
 						</ul>
 					</div>
 					<div className="flex flex-col justify-between h-[150px]">
-						<h1 className=" text-[14px]">
-							{des}
-						</h1>
-						<a
-							href={link}
-							className="self-start bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-full px-4 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500"
-						>
-							Source
-						</a>
+						<h1 className=" text-[14px]">{des}</h1>
+						<div className="flex gap-5">
+							<a
+								target="_blank"
+								href={link}
+								className="self-start bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-full px-4 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500"
+							>
+								Source
+							</a>
+							<a
+								href={url}
+								target="_blank"
+								className={`${!visit? 'hidden': null} self-start text-gray-600  border hover:border-violet-500 font-semibold rounded-full px-6 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:text-violet-500`}
+							>
+								Visit
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -22,6 +22,35 @@ const PortFolio = () => {
 			stack: ["React", "Next.Js", "TailWind CSS"],
 			des: "My personal portfolio.",
 			link: "https://github.com/samieteq/samieazubike-portfolio",
+			visit: true,
+			url: "https://samieazubike.vercel.app",
+		},
+		{
+			image: "Product-Preview-Card.png",
+			name: "Product Preview Card",
+			stack: ["HTML", "CSS"],
+			des: "This is a simple product preview card with no functionalities.",
+			link: "https://github.com/samieteq/Product-preview-card-component",
+			visit: true,
+			url: "https://samieteq-product-preview-card.netlify.app/",
+		},
+		{
+			image: "responsive-order-summary-card-project.jpg",
+			name: "Summary Card",
+			stack: ["HTML", "SCSS"],
+			des: "This is a very simple responsive summary card with no functionalities.",
+			link: "https://github.com/samieteq/responsive-order-summary-card-project",
+			visit: true,
+			url: "https://samieteq-resp-order-summary-card.netlify.app/",
+		},
+		{
+			image: "tip-calculator.jpg",
+			name: "Tip Calculator",
+			stack: ["HTML", "SCSS", "JavaScript"],
+			des: "This is a responsive calculator for tips.",
+			link: "https://github.com/samieteq/tip-calculator",
+			visit: true,
+			url: "https://samieteq-tip-calculator.netlify.app/",
 		},
 	];
 	return (
@@ -42,6 +71,8 @@ const PortFolio = () => {
 									stack={item.stack}
 									des={item.des}
 									bgcolor={item.bgcolor}
+									visit={item.visit}
+									url={item.url}
 								/>
 							</>
 						))}
