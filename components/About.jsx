@@ -1,12 +1,12 @@
 const About = () => {
 	return (
 		<>
-			<div id="about" className="grid grid-cols-12">
-				<div className="col-start-2 col-span-10 mt-[200px] flex flex-col px-4 py-4 h-auto">
-					<h1 className="text-black relative before:-bottom-1 font-bold text-6xl border-b-[6px] border-violet-800 w-fit xs:max-xm:text-[40px]">
-						About
+			<div id="about" className="px-12 w-full max-w-7xl xs:max-sm:px-5">
+				<div className="flex flex-col py-4 h-auto">
+					<h1 className="text-black relative font-bold text-[32px] tracking-tighter">
+						About Me.
 					</h1>
-					<p className="text-[20px] mt-3">
+					<p className="text-[20px] mt-3 text-gray-600">
 						I am a life long learning, determined and passion-driven
 						Software Engineer, building Tech Communities around Tech
 						Products and increasing engagement through user adoption

@@ -8,7 +8,6 @@ const PortFolio = () => {
 			stack: ["Core Java", "JavaFX", "MySQL"],
 			des: "An application that manages your task, project, message client, and helps you communicate with your team.",
 			link: "https://github.com/samieteq/bobfi",
-			bgcolor: "#f0f9ff",
 		},
 		{
 			image: "splashscreen.jpg",
@@ -16,7 +15,6 @@ const PortFolio = () => {
 			stack: ["Core Java", "JavaFX"],
 			des: "Basic splash screen for desktop application",
 			link: "https://github.com/samieteq/splash-screen",
-			bgcolor: "#f5f3ff",
 		},
 		{
 			image: "samie-portfolio.svg",
@@ -24,17 +22,16 @@ const PortFolio = () => {
 			stack: ["React", "Next.Js", "TailWind CSS"],
 			des: "My personal portfolio.",
 			link: "https://github.com/samieteq/samieazubike-portfolio",
-			bgcolor: "#f1f5f9",
 		},
 	];
 	return (
 		<>
-			<div id="portfolio" className="grid grid-cols-12 ">
-				<div className="col-start-2 col-span-11 my-[100px] flex flex-col h-auto gap-10">
-					<h1 className="text-black relative before:-bottom-1 font-bold text-6xl border-b-[6px] border-violet-800 w-fit xs:max-xm:text-[40px]">
+			<div id="portfolio" className="w-full max-w-7xl px-12">
+				<div className="flex flex-col h-auto gap-10">
+					<h1 className="text-black relative font-bold text-[32px] tracking-tighter self-start">
 						Projects
 					</h1>
-					<div className="relative -left-10 flex flex-row gap-5 flex-wrap justify-center xs:max-sm:-left-4">
+					<div className="relative flex gap-5 flex-wrap justify-center">
 						{project.map((item, key) => (
 							<>
 								<Project
