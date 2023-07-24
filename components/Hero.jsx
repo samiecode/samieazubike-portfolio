@@ -11,14 +11,18 @@ function Hero() {
 			>
 				{/* Description  */}
 				<div className="relative h-auto w-1/2  xs:max-lg:order-last xs:max-lg:top-[100px] xs:max-lg:self-start xs:max-lg:w-full ">
-					<label className="font-bold text-[70px] leading-none pt-[40px] tracking-tight xs:max-lg:block xs:max-xm:text-[40px]">
-						I&apos;m a{" "}
-						<span className="text-violet-800">
-							Software
-							<br /> Engineer
-						</span>
-					</label>
-					<p className="text-[18px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px]">
+					<div>
+						<h1 className="font-semibold text-[60px] text-gray-700 leading-none pt-[40px] tracking-tight xs:max-lg:block xs:max-xm:text-[40px]">
+							Hi, I&apos;m{" "}
+							<span className="bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500">
+								Samie
+							</span>
+						</h1>
+						<h2 className="text-2xl font-bold text-gray-700">
+							Java Backend & Full Stack Engineer
+						</h2>
+					</div>
+					<p className="text-[18px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px] mt-5">
 						I have a year of experience building and designing
 						software, Currently, I love to work on web application
 						using technologies like, Java, Javascript, SpringBoot,

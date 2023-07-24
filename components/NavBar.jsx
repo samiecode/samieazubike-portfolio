@@ -58,9 +58,7 @@ const NavBar = () => {
 		<>
 			{/* fixed top-0 h-[70px] grid grid-cols-12 z-50 bg-white border-b-[2px]
 			border-gray-100 w-full items-center */}
-			<div
-				className="fixed z-50 top-0 flex w-full max-w-7xl items-center justify-between px-12 xs:max-sm:px-5 py-4 border-b bg-white opacity-95"
-			>
+			<div className="fixed z-50 top-0 flex w-full max-w-7xl items-center justify-between px-12 xs:max-sm:px-5 py-4 border-b bg-white opacity-95">
 				<div className="">
 					<Link
 						activeClass="active"
@@ -68,7 +66,7 @@ const NavBar = () => {
 						smooth={true}
 						offset={-70}
 						duration={500}
-						className="text-2xl font-bold no-underline relative cursor-pointer xs:max-sm:text-xl"
+						className="text-2xl font-bold no-underline relative cursor-pointer xs:max-sm:text-xl bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-fuchsia-600"
 					>
 						Samie Azubike
 					</Link>

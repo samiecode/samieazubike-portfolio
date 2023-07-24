@@ -17,7 +17,7 @@ const PortFolio = () => {
 			link: "https://github.com/samieteq/splash-screen",
 		},
 		{
-			image: "samie-portfolio.svg",
+			image: "screenshot-rocks (3).png",
 			name: "Personal Porfolio",
 			stack: ["React", "Next.Js", "TailWind CSS"],
 			des: "My personal portfolio.",
@@ -55,7 +55,7 @@ const PortFolio = () => {
 	];
 	return (
 		<>
-			<div id="portfolio" className="w-full max-w-7xl px-12">
+			<div id="portfolio" className="w-full max-w-7xl px-12 xs:max-sm:px-5">
 				<div className="flex flex-col h-auto gap-10">
 					<h1 className="text-black relative font-bold text-[32px] tracking-tighter self-start">
 						Projects
