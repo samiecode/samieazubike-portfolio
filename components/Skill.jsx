@@ -37,6 +37,13 @@ const Skill = () => {
 			hover_border: "hover:border-[#00d8ff]",
 		},
 		{
+			color: "black",
+			img: "Next.js.png",
+			name: "NEXT JS",
+			border_color: "border-black",
+			hover_border: "hover:border-black",
+		},
+		{
 			color: "#ec5c28",
 			img: "html-5.png",
 			name: "HTML",
