@@ -22,7 +22,7 @@ function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 						{name}
 					</h1>
 					<div>
-						<ul className="flex flex-wrap font-semibold text-violet-900 w-full gap-3">
+						<ul className="flex flex-wrap font-semibold text-violet-900 w-full gap-3 leading-[10px]">
 							{stack.map((item, key) => (
 								<>
 									<li
