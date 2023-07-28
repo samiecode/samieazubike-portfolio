@@ -3,6 +3,23 @@ import Project from "./Project";
 const PortFolio = () => {
 	const project = [
 		{
+			image: "Spring boot Registration System with React",
+			name: "Spring boot Registration System with React",
+			stack: [
+				"Core Java",
+				"TypeScript",
+				"Spring Boot",
+				"React",
+				"NextJS",
+				"MySQL",
+				"Tailwind CSS",
+			],
+			des: "This is a basic Spring Boot registration application with signup, signin, and dashboard functionalities. It also handles data validation, Use's Formik and  Yup for form data validation, Next-Auth for Authentication. Use can read more in the github repo.",
+			link: "https://github.com/samieteq/springboot-registration-system",
+			visit: true,
+			url: "https://springbootregistrationsystem.netlify.app",
+		},
+		{
 			image: "bobfi-splash-screen.png",
 			name: "Bobfi",
 			stack: ["Core Java", "JavaFX", "MySQL"],
