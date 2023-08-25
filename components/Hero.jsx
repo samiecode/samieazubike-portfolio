@@ -23,7 +23,7 @@ function Hero() {
 						</h2>
 					</div>
 					<p className="text-[18px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px] mt-5">
-						I have a year of experience building and designing
+						I have years of experience building and designing
 						software, Currently, I love to work on web application
 						using technologies like, Java, Javascript, SpringBoot,
 						MySQL and PostgreSQL.
