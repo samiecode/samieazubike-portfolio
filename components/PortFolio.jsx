@@ -72,7 +72,7 @@ const PortFolio = () => {
 	];
 	return (
 		<>
-			<div id="portfolio" className="w-full max-w-7xl px-12 xs:max-sm:px-5">
+			<div id="portfolio" className="w-full max-w-7xl px-10 xs:max-sm:px-5">
 				<div className="flex flex-col h-auto gap-10">
 					<h1 className="text-black relative font-bold text-[32px] tracking-tighter self-start">
 						Projects
