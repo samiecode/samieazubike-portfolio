@@ -4,7 +4,7 @@ import Image from "next/image";
 function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 	return (
 		<>
-			<div className="drop-shadow-sm w-[33%] h-auto bg-gray-100 rounded-xl px-4 py-4">
+			<div className="drop-shadow-sm w-[340px] h-auto bg-gray-100 rounded-xl px-4 py-4">
 				<div
 					className={`w-full bg-white h-[150px] flex items-center justify-center ${bgcolor} py-5 rounded-md`}
 				>
