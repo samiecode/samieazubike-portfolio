@@ -7,7 +7,7 @@ function Hero() {
 		<>
 			<div
 				id="home"
-				className="mt-36 flex w-full max-w-7xl items-center justify-between px-12 xs:max-sm:px-5 xs:max-lg:flex-col"
+				className="mt-36 flex w-full max-w-7xl items-center justify-between px-10 xs:max-sm:px-5 xs:max-lg:flex-col"
 			>
 				{/* Description  */}
 				<div className="relative h-auto w-1/2  xs:max-lg:order-last xs:max-lg:top-[100px] xs:max-lg:self-start xs:max-lg:w-full ">
@@ -23,7 +23,7 @@ function Hero() {
 						</h2>
 					</div>
 					<p className="text-[18px] font-medium relative top-[20px] font-medium xs:max-md:text-[18px] mt-5">
-						I have a year of experience building and designing
+						I have years of experience building and designing
 						software, Currently, I love to work on web application
 						using technologies like, Java, Javascript, SpringBoot,
 						MySQL and PostgreSQL.

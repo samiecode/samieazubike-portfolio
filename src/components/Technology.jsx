@@ -4,7 +4,7 @@ export default function Technology() {
 
 	return (
 		<>
-			<div id="skills" className="px-12 w-full max-w-7xl xs:max-sm:px-5">
+			<div id="skills" className="px-10 w-full max-w-7xl xs:max-sm:px-5">
 				<div className="flex flex-col h-auto gap-5">
 					<h1 className="text-black font-bold text-[32px] tracking-tighter">
 						Technologies

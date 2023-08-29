@@ -4,7 +4,7 @@ import Image from "next/image";
 function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 	return (
 		<>
-			<div className="drop-shadow-sm w-[370px] h-auto bg-gray-100 rounded-xl px-4 py-4">
+			<div className="drop-shadow-sm w-[340px] h-auto bg-gray-100 rounded-xl px-4 py-4">
 				<div
 					className={`w-full bg-white h-[150px] flex items-center justify-center ${bgcolor} py-5 rounded-md`}
 				>
@@ -22,7 +22,7 @@ function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 						{name}
 					</h1>
 					<div>
-						<ul className="flex flex-wrap font-semibold text-violet-900 w-full gap-3">
+						<ul className="flex flex-wrap font-semibold text-violet-900 w-full gap-3 leading-[10px]">
 							{stack.map((item, key) => (
 								<>
 									<li
