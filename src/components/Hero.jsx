@@ -1,6 +1,6 @@
-import SocialLink from "@/components/SocialLink";
+import SocialLink from "./SocialLink";
 import Image from "next/image";
-import Contact from "@/components/Contact";
+import Contact from "./Contact";
 
 function Hero() {
 	return (

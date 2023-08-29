@@ -1,35 +1,34 @@
-import Image from "next/image";
-import MinNavBar from "@/components/MinNavBar";
+'use client'
+
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
-import { Link, animateScroll as scroll} from 'react-scroll'
+import {useState} from "react";
+import {Link, animateScroll as scroll} from "react-scroll";
 import { useEffect } from "react";
+import MinNavBar from "./MinNavBar";
 
 const NavBar = () => {
 	const [activeLink, setActiveLink] = useState({
 		about: false,
 		skills: false,
-		projects: false
-	})
+		projects: false,
+	});
 
 	const handleSetActiveLink = (name, value) => {
 		setActiveLink((pre) => ({
 			...pre,
 			[name]: value,
 		}));
-	}
-	const [isToggle, setIsToggle] = useState(false)
+	};
+	const [isToggle, setIsToggle] = useState(false);
 
 	useEffect(() => {
-
 		const handleScroll = () => {
 			//scroll event handler code
 			if (window.pageYOffset > 408 && window.pageYOffset <= 857) {
-				handleSetActiveLink("about", true)
-			}
-			else {
-				handleSetActiveLink("about", false)
+				handleSetActiveLink("about", true);
+			} else {
+				handleSetActiveLink("about", false);
 			}
 
 			if (window.pageYOffset > 857 && window.pageYOffset <= 1584) {
@@ -43,7 +42,6 @@ const NavBar = () => {
 			} else {
 				handleSetActiveLink("skills", false);
 			}
-			
 		};
 
 		window.addEventListener("scroll", handleScroll);
@@ -51,8 +49,7 @@ const NavBar = () => {
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-
-	},[]);
+	}, []);
 
 	return (
 		<>

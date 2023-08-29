@@ -1,4 +1,4 @@
-const About = () => {
+function About() {
 	return (
 		<>
 			<div id="about" className="px-12 w-full max-w-7xl xs:max-sm:px-5">
