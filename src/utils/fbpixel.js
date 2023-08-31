@@ -43,4 +43,5 @@ var noscriptContent = `
       `;
 
 // Insert the noscript content into the DOM
-document.head.insertAdjacentHTML("beforeend", noscriptContent);
+//document.head.insertAdjacentHTML("beforeend", noscriptContent);
+document.body.insertAdjacentHTML("beforeend", noscriptContent);
