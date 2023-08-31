@@ -21,16 +21,8 @@ export default function RootLayout({ children }) {
           type="image/<generated>"
           sizes="<generated>"
         />
-        <script src="../utils/fbpixel.js" async />
-
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style="display:none"
-            src="https://www.facebook.com/tr?id=2574515696062708&ev=PageView&noscript=1"
-          />
-        </noscript>
+        <Script src="../utils/fbpixel.js"></Script>
+        
       </head>
       <body>{children}</body>
     </html>
