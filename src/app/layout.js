@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           type="image/<generated>"
           sizes="<generated>"
         />
-        <script src="../utils/fbpixel.js"></script>
+        <script src="../utils/fbpixel.js" async></script>
 
         <noscript>
           <img
