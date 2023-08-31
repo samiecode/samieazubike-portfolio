@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from 'next/script'
 
 export const metadata = {
   title: "Samie Azubike | Software Engineer",
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
           type="image/<generated>"
           sizes="<generated>"
         />
-        <script src="../utils/fbpixel.js" async></script>
+        <script src="../utils/fbpixel.js" async />
 
         <noscript>
           <img
