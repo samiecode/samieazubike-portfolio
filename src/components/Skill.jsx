@@ -72,7 +72,7 @@ const Skill = () => {
 		},
 		{
 			color: "#336691",
-			img: "https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
 			name: "POSTGRESQL",
 			border_color: "border-[#336691]",
 			hover_border: "hover:border-[#336691]",
