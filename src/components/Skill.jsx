@@ -99,6 +99,13 @@ const Skill = () => {
 			border_color: "border-[#2597ef]",
 			hover_border: "hover:border-[#2597ef]",
 		},
+		{
+			color: "#6762a5",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg",
+			name: "HEROKU",
+			border_color: "border-[#6762a5]",
+			hover_border: "hover:border-[#6762a5]",
+		},
 	];
 
 	return (
