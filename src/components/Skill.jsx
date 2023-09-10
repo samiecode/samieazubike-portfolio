@@ -11,14 +11,14 @@ const Skill = () => {
 		},
 		{
 			color: "#8bc24a",
-			img: "https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/spring/spring-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg",
 			name: "SPRINGBOOT",
 			border_color: "border-[#8bc24a]",
 			hover_border: "hover:border-[#8bc24a]",
 		},
 		{
 			color: "#ffd600",
-			img: "javascript-39395.png",
+			img: "jhttps://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
 			name: "JAVASCRIPT",
 			border_color: "border-[#ffd600]",
 			hover_border: "hover:border-[#ffd600]",
