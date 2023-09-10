@@ -58,14 +58,14 @@ const Skill = () => {
 			hover_border: "hover:border-[#07b6d5]",
 		},{
 			color: "#f34f29",
-			img: "https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/git/git-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg",
 			name: "GIT",
 			border_color: "border-[#f34f29]",
 			hover_border: "hover:border-[#f34f29]"
 		},
 		{
 			color: "black",
-			img: "github.png",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg",
 			name: "GITHUB",
 			border_color: "border-black",
 			hover_border: "hover:border-black",
