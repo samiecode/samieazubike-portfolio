@@ -45,7 +45,7 @@ const Skill = () => {
 		},
 		{
 			color: "#2b78c8",
-			img: "css-3.png",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
 			name: "CSS",
 			border_color: "border-[#2b78c8]",
 			hover_border: "hover:border-[#2b78c8]",
@@ -79,14 +79,14 @@ const Skill = () => {
 		},
 		{
 			color: "#1f90ff",
-			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
 			name: "MYQSL",
 			border_color: "border-[#1f90ff]",
 			hover_border: "hover:border-[#1f90ff]",
 		},
 		{
 			color: "#ec5c28",
-			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+			img: "postman.svg",
 			name: "POSTMAN",
 			border_color: "border-[#ec5c28]",
 			hover_border: "hover:border-[#ec5c28]",
@@ -112,7 +112,7 @@ const Skill = () => {
 					>
 						<Image
 							className="xs:max-md:object-fit xs:max-md:w-[65%]"
-							src={`${item.img}`}
+							src={`${item.img.startsWith("https") ? `${item.img}` : `\images\ ${item.img}`}`}
 							height={40}
 							width={40}
 							alt="icon"
