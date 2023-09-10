@@ -1,9 +1,10 @@
 import Image from "next/image";
+
 const Skill = () => {
 	const skills = [
 		{
 			color: "#7fa4ec",
-			img: "java.png",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
 			name: "JAVA",
 			border_color: "border-[#7fa4ec]",
 			hover_border: "hover:border-[#7fa4ec]",
