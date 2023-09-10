@@ -52,7 +52,7 @@ const Skill = () => {
 		},
 		{
 			color: "#07b6d5",
-			img: "tailwind-css-icon.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
 			name: "TAILWIND CSS",
 			border_color: "border-[#07b6d5]",
 			hover_border: "hover:border-[#07b6d5]",
@@ -79,21 +79,21 @@ const Skill = () => {
 		},
 		{
 			color: "#1f90ff",
-			img: "MySQL.png",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg",
 			name: "MYQSL",
 			border_color: "border-[#1f90ff]",
 			hover_border: "hover:border-[#1f90ff]",
 		},
 		{
 			color: "#ec5c28",
-			img: "postman.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
 			name: "POSTMAN",
 			border_color: "border-[#ec5c28]",
 			hover_border: "hover:border-[#ec5c28]",
 		},
 		{
 			color: "#2597ef",
-			img: "docker.png",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
 			name: "DOCKER",
 			border_color: "border-[#2597ef]",
 			hover_border: "hover:border-[#2597ef]",
