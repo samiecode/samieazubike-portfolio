@@ -53,7 +53,7 @@ const Skill = () => {
 		},
 		{
 			color: "#07b6d5",
-			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg",
 			name: "TAILWIND CSS",
 			border_color: "border-[#07b6d5]",
 			hover_border: "hover:border-[#07b6d5]",
