@@ -87,7 +87,7 @@ const Skill = () => {
 		},
 		{
 			color: "#ec5c28",
-			img: "postman.svg",
+			img: "https://raw.githubusercontent.com/samiecode/samieazubike-portfolio/main/public/images/postman.svg",
 			name: "POSTMAN",
 			border_color: "border-[#ec5c28]",
 			hover_border: "hover:border-[#ec5c28]",
