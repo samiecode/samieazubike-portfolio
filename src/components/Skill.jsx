@@ -71,6 +71,13 @@ const Skill = () => {
 			hover_border: "hover:border-black",
 		},
 		{
+			color: "#336691",
+			img: "https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg",
+			name: "POSTGRESQL",
+			border_color: "border-[#336691]",
+			hover_border: "hover:border-[#336691]",
+		},
+		{
 			color: "#1f90ff",
 			img: "MySQL.png",
 			name: "MYQSL",
@@ -105,7 +112,7 @@ const Skill = () => {
 					>
 						<Image
 							className="xs:max-md:object-fit xs:max-md:w-[65%]"
-							src={`${item.img.includes('https') ? item.img  : `/images/${item.img}`}`}
+							src={`${item.img}`}
 							height={40}
 							width={40}
 							alt="icon"
