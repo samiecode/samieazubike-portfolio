@@ -10,7 +10,7 @@ const Skill = () => {
 		},
 		{
 			color: "#8bc24a",
-			img: "https://github.com/devicons/devicon/blob/master/icons/spring/spring-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/spring/spring-original.svg",
 			name: "SPRINGBOOT",
 			border_color: "border-[#8bc24a]",
 			hover_border: "hover:border-[#8bc24a]",
@@ -58,7 +58,7 @@ const Skill = () => {
 			hover_border: "hover:border-[#07b6d5]",
 		},{
 			color: "#f34f29",
-			img: "https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/git/git-original.svg",
 			name: "GIT",
 			border_color: "border-[#f34f29]",
 			hover_border: "hover:border-[#f34f29]"
@@ -72,7 +72,7 @@ const Skill = () => {
 		},
 		{
 			color: "#336691",
-			img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+			img: "https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg",
 			name: "POSTGRESQL",
 			border_color: "border-[#336691]",
 			hover_border: "hover:border-[#336691]",
@@ -112,7 +112,7 @@ const Skill = () => {
 					>
 						<Image
 							className="xs:max-md:object-fit xs:max-md:w-[65%]"
-							src={`${item.img}`}
+							src={`${item.img.includes('https') ? item.img: `/images/${item.img}`}`}
 							height={40}
 							width={40}
 							alt="icon"
