@@ -112,7 +112,7 @@ const Skill = () => {
 					>
 						<Image
 							className="xs:max-md:object-fit xs:max-md:w-[65%]"
-							src={` ${item.img} `}
+							src={`${item.img}`}
 							height={40}
 							width={40}
 							alt="icon"
