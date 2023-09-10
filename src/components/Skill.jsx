@@ -9,15 +9,8 @@ const Skill = () => {
 			hover_border: "hover:border-[#7fa4ec]",
 		},
 		{
-			color: "#7fa4ec",
-			img: "javafx.png",
-			name: "JAVAFX",
-			border_color: "border-[#7fa4ec]",
-			hover_border: "hover:border-[#7fa4ec]",
-		},
-		{
 			color: "#8bc24a",
-			img: "spring.svg",
+			img: "https://github.com/devicons/devicon/blob/master/icons/spring/spring-original.svg",
 			name: "SPRINGBOOT",
 			border_color: "border-[#8bc24a]",
 			hover_border: "hover:border-[#8bc24a]",
@@ -63,6 +56,12 @@ const Skill = () => {
 			name: "TAILWIND CSS",
 			border_color: "border-[#07b6d5]",
 			hover_border: "hover:border-[#07b6d5]",
+		},{
+			color: "#f34f29",
+			img: "https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg",
+			name: "GIT",
+			border_color: "border-[#f34f29]",
+			hover_border: "hover:border-[#f34f29]"
 		},
 		{
 			color: "black",
@@ -106,7 +105,7 @@ const Skill = () => {
 					>
 						<Image
 							className="xs:max-md:object-fit xs:max-md:w-[65%]"
-							src={`/images/${item.img}`}
+							src={`${item.img.includes('https') ? item.img  : `/images/${item.img}`}`}
 							height={40}
 							width={40}
 							alt="icon"
