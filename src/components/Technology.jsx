@@ -15,12 +15,8 @@ export default function Technology() {
 						frequently. I&apos;m always looking to learn new things
 						everyday!
 					</p>
-					<div className="flex flex-wrap gap-4 xs:max-md:justify-center">
-						<Skill/>
-						
-						{/* {skills.map((item, key) => (
-							<Skill key={key} color={ item.color} img={item.img} name={item.name} />
-						))} */}
+					<div className="grid lg:grid-cols-8 xm:grid-cols-5 xs:grid-cols-3 gap-5 ">
+						<Skill />
 					</div>
 				</div>
 			</div>
