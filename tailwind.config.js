@@ -17,7 +17,7 @@ module.exports = {
 			}
 		},
 		screens: {
-			xs: "320px",
+			xs: "270px",
 			xm: "570px",
 			xml: "420px",
 			...defaultTheme.screens,

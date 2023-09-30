@@ -4,56 +4,58 @@ import Image from "next/image";
 function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 	return (
 		<>
-			<div className="drop-shadow-sm w-[340px] h-auto bg-gray-100 rounded-xl px-4 py-4">
-				<div
-					className={`w-full bg-white h-[150px] flex items-center justify-center ${bgcolor} py-5 rounded-md`}
-				>
-					<Image
-						className="w-[100%] h-[100%] rounded-md drop-shadow-sm object-contain"
-						src={`/images/${image}`}
-						height={300}
-						width={300}
-						alt="project image"
-					/>
-				</div>
-
-				<div className="bg-white flex flex-col h-auto px-6 pb-6 gap-3">
-					<h1 className="font-bold text-2xl text-violet-900">
-						{name}
-					</h1>
-					<div>
-						<ul className="flex flex-wrap font-semibold text-violet-900 w-full gap-3 leading-[10px]">
-							{stack.map((item, key) => (
-								<>
-									<li
-										key={key}
-										className="flex items-center gap-2 self-start"
-									>
-										<span className="block bg-gradient-to-r from-violet-500 to-fuchsia-500 h-[7px] w-[7px] rounded-full"></span>
-										{item}
-									</li>
-								</>
-							))}
-						</ul>
+			<div className="drop-shadow-sm  bg-gray-100 rounded-xl px-2 py-2">
+				<div className="h-auto bg-white flex flex-col justify-between rounded-md drop-shadow-md">
+					<div
+						className={`w-full h-[11rem] flex items-center justify-center ${bgcolor} rounded-md`}
+					>
+						<Image
+							className="w-[100%] h-[100%] rounded-md object-cover"
+							src={`/images/${image}`}
+							height={300}
+							width={300}
+							alt="project image"
+						/>
 					</div>
-					<div className="flex flex-col justify-between h-[150px]">
-						<h1 className=" text-[14px]">{des}</h1>
-						<div className="flex gap-5">
-							<a
-								target="_blank"
-								href={link}
-								className="self-start bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-full px-4 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500"
-							>
-								Source
-							</a>
-							<a
-								href={url}
-								target="_blank"
-								className={`${!visit? 'hidden': null} self-start text-gray-600  border hover:border-violet-500 font-semibold rounded-full px-6 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:text-violet-500`}
-							>
-								Visit
-							</a>
+					<div className="flex flex-col px-6 gap-3 h-[15rem] py-4 xs:max-sm:h-auto">
+						<h1 className="font-bold text-2xl text-violet-900">
+							{name}
+						</h1>
+						<div>
+							<ul className="flex flex-wrap font-semibold w-full gap-2 justify-cente leading-[10px]">
+								{stack.map((item, key) => (
+									<>
+										<span
+											key={key}
+											className="flex tracking-tight items-center gap-2 self-start border bg-gray-50 py-2 px-4 text-[12px] rounded-full xs:max-xm:text-[10px] xs:max-xm:py-1 xs:max-xm:px-2"
+										>
+											{item}
+										</span>
+									</>
+								))}
+							</ul>
 						</div>
+						<div className="flex flex-col justify-between">
+							<h1 className=" text-[14px] xs:max-xm:text-[13px] tracking-tight">{des}</h1>
+						</div>
+					</div>
+					<div className="flex gap-5 py-4 px-6 justify-between">
+						<a
+							target="_blank"
+							href={link}
+							className="self-start bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white font-semibold rounded-full px-4 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-violet-700 hover:to-fuchsia-500"
+						>
+							Source
+						</a>
+						<a
+							href={url}
+							target="_blank"
+							className={`${
+								!visit ? "hidden" : null
+							} self-start text-gray-600  border hover:border-violet-500 font-semibold rounded-full px-8 py-2 text-[14px] transform transition-all  ease-in-out duration-500 hover:text-violet-500`}
+						>
+							Visit
+						</a>
 					</div>
 				</div>
 			</div>

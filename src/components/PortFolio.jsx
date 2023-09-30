@@ -14,24 +14,10 @@ const PortFolio = () => {
 				"MySQL",
 				"Tailwind CSS",
 			],
-			des: "This is a basic Spring Boot registration application with signup, signin, and dashboard functionalities. It also handles data validation. Use can read more in my github repo.",
+			des: "This is a basic Spring Boot registration application with signup, signin, and dashboard functionalities.",
 			link: "https://github.com/samieteq/springboot-registration-system",
 			visit: true,
 			url: "https://springbootregistrationsystem.netlify.app",
-		},
-		{
-			image: "bobfi-splash-screen.png",
-			name: "Bobfi",
-			stack: ["Core Java", "JavaFX", "MySQL"],
-			des: "An application that manages your task, project, message client, and helps you communicate with your team.",
-			link: "https://github.com/samieteq/bobfi",
-		},
-		{
-			image: "splashscreen.jpg",
-			name: "Chatfix Splash Screen",
-			stack: ["Core Java", "JavaFX"],
-			des: "Basic splash screen for desktop application",
-			link: "https://github.com/samieteq/splash-screen",
 		},
 		{
 			image: "screenshot-rocks (3).png",
@@ -77,7 +63,7 @@ const PortFolio = () => {
 					<h1 className="text-black relative font-bold text-[32px] tracking-tighter self-start">
 						Projects
 					</h1>
-					<div className="relative flex gap-5 flex-wrap justify-center">
+					<div className="relative grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7">
 						{project.map((item, key) => (
 							<>
 								<Project
