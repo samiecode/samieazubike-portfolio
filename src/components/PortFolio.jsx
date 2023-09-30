@@ -20,7 +20,7 @@ const PortFolio = () => {
 			url: "https://springbootregistrationsystem.netlify.app",
 		},
 		{
-			image: "screenshot-rocks (3).png",
+			image: "samieazubike.me.png",
 			name: "Personal Porfolio",
 			stack: ["React", "Next.Js", "TailWind CSS"],
 			des: "My personal portfolio.",
