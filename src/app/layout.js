@@ -13,7 +13,6 @@ export default function RootLayout({ children }) {
                     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
                     rel="stylesheet"
                 ></link>
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <link
                     rel="icon"
                     href="/favicon?<generated>"
