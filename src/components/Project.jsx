@@ -27,7 +27,7 @@ function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 									<>
 										<span
 											key={key}
-											className="flex tracking-tight items-center gap-2 self-start border bg-gray-50 py-2 px-4 text-[12px] rounded-full xs:max-xm:text-[10px] xs:max-xm:py-1 xs:max-xm:px-2"
+											className="hover:bg-violet-50 flex tracking-tight items-center gap-2 self-start border bg-gray-50 py-2 px-4 text-[12px] rounded-full xs:max-xm:text-[10px] xs:max-xm:py-1 xs:max-xm:px-2"
 										>
 											{item}
 										</span>
