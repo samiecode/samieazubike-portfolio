@@ -4,13 +4,13 @@ import Image from "next/image";
 function Project({link, bgcolor, image, name, stack, des, visit, url}) {
 	return (
 		<>
-			<div className="drop-shadow-sm  bg-gray-100 rounded-xl px-2 py-2">
-				<div className="h-auto bg-white flex flex-col justify-between rounded-md drop-shadow-md">
+			<div className="drop-shadow-md rounded-xl px-2 py-2">
+				<div className="h-auto bg-white flex flex-col justify-between rounded-xl">
 					<div
-						className={`w-full h-[11rem] flex items-center justify-center ${bgcolor} rounded-md`}
+						className={`w-full h-[11rem] flex items-center justify-center ${bgcolor} rounded-xl`}
 					>
 						<Image
-							className="w-[100%] h-[100%] rounded-md object-cover"
+							className="w-[100%] h-[100%] rounded-xl object-cover"
 							src={`/images/${image}`}
 							height={300}
 							width={300}
