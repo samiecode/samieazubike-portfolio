@@ -37,24 +37,7 @@ const PortFolio = () => {
 			visit: true,
 			url: "https://samieteq-product-preview-card.netlify.app/",
 		},
-		{
-			image: "responsive-order-summary-card-project.jpg",
-			name: "Summary Card",
-			stack: ["HTML", "SCSS"],
-			des: "This is a very simple responsive summary card with no functionalities.",
-			link: "https://github.com/samieteq/responsive-order-summary-card-project",
-			visit: true,
-			url: "https://samieteq-resp-order-summary-card.netlify.app/",
-		},
-		{
-			image: "tip-calculator.jpg",
-			name: "Tip Calculator",
-			stack: ["HTML", "SCSS", "JavaScript"],
-			des: "This is a responsive calculator for tips.",
-			link: "https://github.com/samieteq/tip-calculator",
-			visit: true,
-			url: "https://samieteq-tip-calculator.netlify.app/",
-		},
+		
 	];
 	return (
 		<>
